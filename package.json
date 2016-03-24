@@ -1,0 +1,21 @@
+{
+  "name": "kingdom_death_ui",
+  "version": "1.0.0",
+  "description": "My first angular bs",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Unfettered/kingdomdeathui.git"
+  },
+  "author": "matthew.s.morales@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Unfettered/kingdomdeathui/issues"
+  },
+  "homepage": "https://github.com/Unfettered/kingdomdeathui#readme"
+}

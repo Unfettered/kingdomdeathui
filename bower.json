@@ -1,0 +1,22 @@
+{
+  "name": "kingdom_death_ui",
+  "dependencies": {
+    "angular-route": "^1.5.2",
+    "angular": "^1.5.2",
+    "angular-animate": "^1.5.2",
+    "angular-bootstrap-checkbox": "^0.4.0",
+    "html5-boilerplate": "^5.3.0",
+    "angular-input-modified": "^2.3.2",
+    "angular-bootstrap": "^1.2.5",
+    "angular-ui-router": "^0.2.18",
+    "bootstrap": "^3.3.6"
+  },
+  "description": "My first angular bs",
+  "main": "index.js",
+  "authors": [
+    "matthew.s.morales@gmail.com"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": ""
+}
