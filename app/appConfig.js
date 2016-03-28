@@ -5,12 +5,11 @@
 		.module('kingdom-death-ui')
 
 		.config(function ($stateProvider, $urlRouterProvider) {
-			// For any unmatched url, redirect to /state1
-			$urlRouterProvider.otherwise("/unathenticated");
+			// For any unmatched url, redirect to /login
+			$urlRouterProvider.otherwise("/login");
 			// Now set up the states
 			$stateProvider
 				.state('kingdom-death-ui', {
-					url: "",
 					abstract: true,
 					templateUrl: "layout/layout.html"
 				})
@@ -19,18 +18,8 @@
 					url: "/login",
 					views: {
 						"main": {
-							template: "login/login.html",
+							templateUrl: "login/login.html",
 							controller: 'loginController as view'
-						}//check if you need .html
-					}
-				})
-
-				.state('kingdom-death-ui.menu', {
-					url: "/menu",
-					views: {
-						"main": {
-							template: "menu/menu.html",
-							controller: 'menuController as view'
 						}//check if you need .html
 					}
 				})
@@ -40,22 +29,18 @@
 					views: {
 						"main": {
 							controller: 'setupController as view',
-							template: "setup/setup.html"
+							templateUrl: "setup/setup.html"
 						},
-						"menu": {
-							controller: 'menuController as view',
-							template: "menu/menu.html"
-						}
 					}
 				})
 
-				.state('kingdom-death-ui.setup.monster-list', {
+				.state('kingdom-death-ui.setup.monsterList', {
 					url: "/setup/monster-list",
 					views: {
 						"main": {
 							controller: 'monsterListController as view',
-							template: "setup/monsterList/monster-list.html"
-						}
+							templateUrl: "setup/monsterList/monster-list.html"
+						},
 					}
 				});
 		});
