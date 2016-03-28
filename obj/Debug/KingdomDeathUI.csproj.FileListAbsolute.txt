@@ -1,6 +1,0 @@
-C:\Users\mmorales.WINDOWS\Source\Workspaces\Workspace\KingdomDeath\KingdomDeathUI\bin\KingdomDeathUI.dll.config
-C:\Users\mmorales.WINDOWS\Source\Workspaces\Workspace\KingdomDeath\KingdomDeathUI\bin\KingdomDeathUI.dll
-C:\Users\mmorales.WINDOWS\Source\Workspaces\Workspace\KingdomDeath\KingdomDeathUI\bin\KingdomDeathUI.pdb
-C:\Users\mmorales.WINDOWS\Source\Workspaces\Workspace\KingdomDeath\KingdomDeathUI\obj\Debug\KingdomDeathUI.dll
-C:\Users\mmorales.WINDOWS\Source\Workspaces\Workspace\KingdomDeath\KingdomDeathUI\obj\Debug\KingdomDeathUI.pdb
-C:\Users\mmorales.WINDOWS\Source\Workspaces\Workspace\KingdomDeath\KingdomDeathUI\obj\Debug\KingdomDeathUI.csprojResolveAssemblyReference.cache
