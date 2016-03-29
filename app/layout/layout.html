@@ -1,9 +1,30 @@
-<div class='menu stars'>
-	<ul class="menu ">
-		<li><a href="#/login">login</a></li>
-		<li><a href="#/setup">setup</a></li>
-	</ul>
+<div class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<p class="navbar-brand">Kingdom Death Monster Manager</p>
+			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-main">
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="monster-list">Monsters <span class="caret"></span></a>
+					<ul class="dropdown-menu" aria-labelledby="themes">
+					</ul>
+				</li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#/reset" target="_blank">Reset</a></li>
+			</ul>
+
+		</div>
+	</div>
 </div>
+
 <div ui-view name=main>
 
 </div>

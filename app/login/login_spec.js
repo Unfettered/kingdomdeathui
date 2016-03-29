@@ -8,7 +8,7 @@ describe('kingdom-death-ui.login module', function() {
 
     it('should ....', inject(function($controller) {
       //spec body
-      var loginCtrl = $controller('loginCtrl');
+      var loginCtrl = $controller('loginController');
       expect(loginCtrl).toBeDefined();
     }));
 

@@ -42,7 +42,19 @@
 							templateUrl: "setup/monsterList/monster-list.html"
 						},
 					}
-				});
+				})
+
+			.state('kingdom-death-ui.tokenTracker', {
+				url: "/token-tracker",
+				views: {
+					"main": {
+						controller: 'tokenTrackerController as view',
+						templateUrl: "tokenTracker/token-tracker.html"
+					},
+				}
+			});
+
+
 		});
 
 
