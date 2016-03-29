@@ -49,13 +49,12 @@
 				views: {
 					"main": {
 						controller: 'tokenTrackerController as view',
-						templateUrl: "tokenTracker/token-tracker.html"
+						templateUrl: "tokenTracker/token-tracker.html",
 					},
 				}
 			});
 
 
 		});
-
 
 })();

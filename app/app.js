@@ -6,6 +6,9 @@
 		'ngRoute',
 		'kingdom-death-ui.login',
 		'kingdom-death-ui.setup',
+		'kingdom-death-ui.tokenTracker',
+		'core.monster',
+		'core.toggleTokenClass',
 		'ui.router',
 		'ui.bootstrap',
 	]);

@@ -1,4 +1,4 @@
 (function () {
 	'use strict';
-	angular.module('kingdom-death-ui.tokenTracker', []);
+	angular.module('kingdom-death-ui.tokenTracker', [ 'core.toggleTokenClass' ]);
 })();

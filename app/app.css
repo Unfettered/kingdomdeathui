@@ -178,12 +178,12 @@ div[name=main]{
 .damage-token{
   background: url(/images/token_sprite_sheet.png);
   background-size: 1020px 84px;
-  background-position: 78px 0px;
+  background-position: 235px 0px;
 }
 .negative-damage-token{
   background: url(/images/token_sprite_sheet.png);
   background-size: 1020px 84px;
-  background-position: 78px 0px;
+  background-position: 157px 0px;
 }
 .accuracy-token{
   background-image: url(/images/token_sprite_sheet.png);
