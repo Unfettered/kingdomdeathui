@@ -4,9 +4,9 @@
 		.module('core.monster')
 		.factory('monster', monster);
 
-	monster.$inject = [];
+	monster.$inject = ['card'];
 
-	function monster() {
+	function monster(card) {
 		return {
 			name: '',
 			level: '',
@@ -19,9 +19,11 @@
 			hitLocationDeck: {},
 			aiDeck: {},
 			resourceDeck: {},
-			pullAI: pullAI
+			woundDeck:{},
+			starterDeck:{},
+			pullCard: pullCard
 		}
-		function pullAI(){
+		function pullCard(deckType){
 
 		}
 	}

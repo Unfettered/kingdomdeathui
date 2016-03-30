@@ -52,9 +52,17 @@
 						templateUrl: "tokenTracker/token-tracker.html",
 					},
 				}
+			})
+
+			.state('kingdom-death-ui.aiDeck', {
+				url: "/ai-deck",
+				views: {
+					"main": {
+						controller: 'aiDeckController as view',
+						templateUrl: "aiDeck/ai-deck.html",
+					},
+				}
 			});
-
-
 		});
 
 })();
