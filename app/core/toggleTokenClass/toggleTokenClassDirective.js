@@ -4,7 +4,6 @@
 		.module('core.toggleTokenClass')
 		.directive('toggleTokenClass', toggleTokenClass);
 
-	toggleTokenClass.$inject = ['monster'];
 
 	function toggleTokenClass() {
 		var directiveDefinitionObject = {
@@ -13,7 +12,7 @@
 			link: function (scope, element, attrs) {
 				var stat = attrs.stat;
 
-				scope.$watch('model.monster.' + stat, function () {
+				scope.$watch('view.monster.' + stat, function () {
 					var statValue = scope.view.monster[stat];
 					var token = angular.element(element[0].getElementsByClassName('token')[0]);
 

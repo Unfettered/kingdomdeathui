@@ -1,51 +1,10 @@
-<div class='counter-band'>
-	<div stat='accuracy' class='token-container toggle-token-class'>
-		<div class='token accuracy-token'></div>
+<div class='counter-band' ng-repeat="attribute in view.attributes">
+	<div stat="{{attribute}}" class='token-container toggle-token-class'>
+		<div class='token {{attribute}}-token'></div>
 		<div class='counter-container'>
-			<div ng-click="increment('accuracy',1)" class='increment'></div>
-			<div class='counter'>{{ view.monster.accuracy }}</div>
-			<div ng-click="increment('accuracy',-1)" class='decrement'></div>
+			<div ng-click="view.increment(attribute,1)" class='increment'></div>
+			<div class='counter'>{{ view.monster[attribute] }}</div>
+			<div ng-click="view.increment(attribute,-1)" class='decrement'></div>
 		</div>
 	</div>
-	<div ng-stat='damage' class='token-container'>
-		<div class='token damage-token'></div>
-		<div class='counter-container'>
-			<div class='increment'></div>
-			<div class='counter'>{{ view.monster.damage }}</div>
-			<div class='decrement'></div>
-		</div>
-	</div>
-	<div ng-stat='evasion' class='token-container'>
-		<div class='token evasion-token'></div>
-		<div class='counter-container'>
-			<div class='increment'></div>
-			<div class='counter'>{{ view.monster.evasion }}</div>
-			<div class='decrement'></div>
-		</div>
-	</div>
-	<div ng-stat='luck' class='token-container'>
-		<div class='token luck-token'></div>
-		<div class='counter-container'>
-			<div class='increment'></div>
-			<div class='counter'>{{ view.monster.luck }}</div>
-			<div class='decrement'></div>
-		</div>
-	</div>
-	<div ng-stat='movement' class='token-container'>
-		<div class='token movement-token'></div>
-		<div class='counter-container'>
-			<div class='increment'></div>
-			<div class='counter'>{{view.monster.movement}}</div>
-			<div class='decrement'></div>
-		</div>
-	</div>
-	<div ng-stat='speed' class='token-container'>
-		<div class='token speed-token'></div>
-		<div class='counter-container'>
-			<div class='increment'></div>
-			<div class='counter'>{{ view.monster.speed }}</div>
-			<div class='decrement'></div>
-		</div>
-	</div>
-
 </div>
