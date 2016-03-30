@@ -10,6 +10,7 @@
 		'kingdom-death-ui.tokenTracker',
 		'core.monster',
 		'core.card',
+		'core.deck',
 		'core.monsterCardLibrary',
 		'core.aiDeckBuilder',
 		'core.toggleTokenClass',

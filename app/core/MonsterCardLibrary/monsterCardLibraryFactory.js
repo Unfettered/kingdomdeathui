@@ -4,52 +4,90 @@
 		.module('core.monsterCardLibrary')
 		.factory('monsterCardLibrary', monsterCardLibrary);
 
-	monsterCardLibrary.$inject = ['card'];
+	monsterCardLibrary.$inject = ['card', 'deck'];
 
-	function monsterCardLibrary(card) {
+	function monsterCardLibrary(card, deck) {
 		var factory = this;
-		var cardService = new card();
+		var cardService = card;
+		var deckService = deck;
 		factory.pullRandomCard = pullRandomCard;
 		factory.pullSpecificCard = pullSpecificCard;
 		factory.resetLibrary = resetLibrary;
+		factory.buildLibrary = buildLibrary;
 		function pullRandomCard(monsterName, type, aiLevel) {
 			var cardPool;
 			var drawnPool;
-			if(type=='AI'){
+			if (type == 'AI') {
 				cardPool = this.library[monsterName][type][aiLevel];
-				drawnPool = this.library[monsterName].draw,[type][aiLevel];
+				drawnPool = this.library[monsterName].drawn[type][aiLevel];
+			} else {
+				cardPool = this.library[monsterName][type];
+				drawnPool = this.library[monsterName].drawn[type];
 			}
-			var size = cardPool.length;
-			var random = Math.floor(Math.random() * size);
-			var name = cardPool.splice(random, 1);
-			drawnPool.push(name);
-			var newCard = cardService.get(name, monsterName, type, aiLevel);
+			var newCard = cardPool.pullRandomCard();
+			drawnPool.push(newCard);
 			return newCard;
 		}
 
 		function pullSpecificCard(monsterName, type, aiLevel, cardName) {
 			var cardPool;
 			var drawnPool;
-			if(type=='AI'){
+			if (type == 'AI') {
 				cardPool = this.library[monsterName][type][aiLevel];
-				drawnPool = this.library[monsterName].drawn,[type][aiLevel];
-			}else{
+				drawnPool = this.library[monsterName].drawn[type][aiLevel];
+			} else {
 				cardPool = this.library[monsterName][type];
-				drawnPool = this.library[monsterName].drawn,[type];
+				drawnPool = this.library[monsterName].drawn[type];
 			}
-			var index = cardPool.indexOf(cardName);
-			var name = cardPool.splice(index, 1);
-			drawnPool.push(name);
-			var newCard = cardService.get(name, monsterName, type, aiLevel);
+			var newCard = cardPool.drawSpecificCard(cardName);
+			drawnPool.push(newCard);
+
 			return newCard;
 		}
 
-		function resetLibrary(){
-			this.library = {};
-			angular.copy(this.libraryClean, this.library);
+		function resetLibrary() {
+			this.buildLibrary();
 		}
 
-		factory.library = {
+		function buildLibrary() {
+			debugger;
+			for (var monsterName in this.libraryDefinition) {
+				//ai Decks
+				for (var aiLevel in this.libraryDefinition[monsterName]['AI']) {
+					this.library[monsterName]['AI'][aiLevel] = deckService.get('AI');
+					this.library[monsterName].drawn['AI'][aiLevel] = deckService.get('Drawn AI');
+
+					for (var cardName in this.libraryDefinition[monsterName]['AI'][aiLevel]) {
+						this.library[monsterName]['AI'][aiLevel].push( cardService.get(cardName, monsterName, 'AI', aiLevel) );
+					}
+				}
+
+				//Hit Location Decks
+				this.library[monsterName].drawn['HitLocation'] = deckService.get('Drawn HitLocation');
+				this.library[monsterName]['HitLocation'] = deckService.get('HitLocation');
+				for (var cardName in this.libraryDefinition[monsterName]['HitLocation']) {
+					this.library[monsterName]['HitLocation'].push( cardService.get(cardName, monsterName, 'HitLocation') );
+				}
+
+				//Hunt Decks
+				this.library[monsterName].drawn['Hunt'] = deckService.get('Drawn Hunt');
+				this.library[monsterName]['Hunt'] = deckService.get('Hunt');
+				for (var cardName in this.libraryDefinition[monsterName]['Hunt']) {
+					this.library[monsterName]['Hunt'].push( cardService.get(cardName, monsterName, 'Hunt') );
+				}
+
+				//Resource Decks
+				this.library[monsterName].drawn['Resource'] = deckService.get('Drawn Resource');
+				this.library[monsterName]['Resource'] = deckService.get('Resource');
+				for (var cardName in this.libraryDefinition[monsterName]['Resource']) {
+					this.library[monsterName]['Resource'].push( cardService.get(cardName, monsterName, 'Resource') );
+				}
+			}
+
+		}
+
+		factory.library = {};
+		factory.libraryDefinition = {
 			'White Lion': {
 				AI: {
 					starter: [
@@ -86,7 +124,7 @@
 						"Vanish",
 					],
 				},
-				HitLocation:[
+				HitLocation: [
 					"Beast’s Back",
 					"Beast’s Brow",
 					"Beast’s Chest",
@@ -111,7 +149,7 @@
 					"Soft Belly",
 					"Straining Neck",
 				],
-				Hunt:[
+				Hunt: [
 					"Aromatic Breeze",
 					"Lion in Heat",
 					"Lion’s Sculpture",
@@ -121,7 +159,7 @@
 					"Sea of Golden Grass",
 					"White Lion Cub"
 				],
-				Resource:[
+				Resource: [
 					"Curious Hand",
 					"Eye of Cat",
 					"Golden Whiskers",
@@ -149,14 +187,13 @@
 						advanced: [],
 						legendary: [],
 					},
-					HitLocation:[],
-					Hunt:[],
-					Resource:[]
+					HitLocation: [],
+					Hunt: [],
+					Resource: []
 				}
 			}
 		}
-		factory.libraryClean = {}
-		angular.copy(factory.library, factory.libraryClean);
+		factory.buildLibrary();
 		return factory;
 	}
 

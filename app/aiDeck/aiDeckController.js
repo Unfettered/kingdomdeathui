@@ -4,12 +4,14 @@
 	angular.module('kingdom-death-ui.aiDeck')
 		.controller('aiDeckController', aiDeckController);
 
-	aiDeckController.$inject = ['monster'];
+	aiDeckController.$inject = ['monster','aiDeckBuilder'];
 
-	function aiDeckController(monster) {
+	function aiDeckController(monster, aiDeckBuilder) {
 		var controller = this;
 		controller.monster = monster;
 		controller.monster.name = "White Lion";
 		controller.monster.level = "Level 1";
+		aiDeckBuilder.generateDeck(monster);
+		debugger;
 	}
 })();
