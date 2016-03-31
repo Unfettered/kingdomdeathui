@@ -25,7 +25,7 @@
 				drawnPool = this.library[monsterName].drawn[type];
 			}
 			var newCard = cardPool.pullRandomCard();
-			drawnPool.push(newCard);
+			drawnPool.addCard(newCard);
 			return newCard;
 		}
 
@@ -40,7 +40,7 @@
 				drawnPool = this.library[monsterName].drawn[type];
 			}
 			var newCard = cardPool.drawSpecificCard(cardName);
-			drawnPool.push(newCard);
+			drawnPool.addCard(newCard);
 
 			return newCard;
 		}
@@ -50,37 +50,50 @@
 		}
 
 		function buildLibrary() {
-			debugger;
 			for (var monsterName in this.libraryDefinition) {
+				this.library[monsterName] = {};
+				this.library[monsterName].drawn = {};
+				this.library[monsterName]['AI'] = {};
+				this.library[monsterName].drawn['AI'] = {};
+				this.library[monsterName]['HitLocation'] = {};
+				this.library[monsterName].drawn['HitLocation'] = {};
+				this.library[monsterName]['Hunt'] = {};
+				this.library[monsterName].drawn['Hunt'] = {};
+				this.library[monsterName]['Resource'] = {};
+				this.library[monsterName].drawn['Resource'] = {};
+
 				//ai Decks
 				for (var aiLevel in this.libraryDefinition[monsterName]['AI']) {
 					this.library[monsterName]['AI'][aiLevel] = deckService.get('AI');
 					this.library[monsterName].drawn['AI'][aiLevel] = deckService.get('Drawn AI');
-
-					for (var cardName in this.libraryDefinition[monsterName]['AI'][aiLevel]) {
-						this.library[monsterName]['AI'][aiLevel].push( cardService.get(cardName, monsterName, 'AI', aiLevel) );
+					for (var cardNameIndex in this.libraryDefinition[monsterName]['AI'][aiLevel]) {
+						var cardName = this.libraryDefinition[monsterName]['AI'][aiLevel][cardNameIndex];
+						this.library[monsterName]['AI'][aiLevel].addCard( cardService.get(cardName, monsterName, 'AI', aiLevel) );
 					}
 				}
 
 				//Hit Location Decks
 				this.library[monsterName].drawn['HitLocation'] = deckService.get('Drawn HitLocation');
 				this.library[monsterName]['HitLocation'] = deckService.get('HitLocation');
-				for (var cardName in this.libraryDefinition[monsterName]['HitLocation']) {
-					this.library[monsterName]['HitLocation'].push( cardService.get(cardName, monsterName, 'HitLocation') );
+				for (var cardNameIndex in this.libraryDefinition[monsterName]['HitLocation']) {
+					var cardName = this.libraryDefinition[monsterName]['HitLocation'][cardNameIndex];
+					this.library[monsterName]['HitLocation'].addCard( cardService.get(cardName, monsterName, 'HitLocation') );
 				}
 
 				//Hunt Decks
 				this.library[monsterName].drawn['Hunt'] = deckService.get('Drawn Hunt');
 				this.library[monsterName]['Hunt'] = deckService.get('Hunt');
-				for (var cardName in this.libraryDefinition[monsterName]['Hunt']) {
-					this.library[monsterName]['Hunt'].push( cardService.get(cardName, monsterName, 'Hunt') );
+				for (var cardNameIndex in this.libraryDefinition[monsterName]['Hunt']) {
+					var cardName = this.libraryDefinition[monsterName]['Hunt'][cardNameIndex];
+					this.library[monsterName]['Hunt'].addCard( cardService.get(cardName, monsterName, 'Hunt') );
 				}
 
 				//Resource Decks
 				this.library[monsterName].drawn['Resource'] = deckService.get('Drawn Resource');
 				this.library[monsterName]['Resource'] = deckService.get('Resource');
-				for (var cardName in this.libraryDefinition[monsterName]['Resource']) {
-					this.library[monsterName]['Resource'].push( cardService.get(cardName, monsterName, 'Resource') );
+				for (var cardNameIndex in this.libraryDefinition[monsterName]['Resource']) {
+					var cardName = this.libraryDefinition[monsterName]['Hunt'][cardNameIndex];
+					this.library[monsterName]['Resource'].addCard( cardService.get(cardName, monsterName, 'Resource') );
 				}
 			}
 

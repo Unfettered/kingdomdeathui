@@ -12,10 +12,6 @@
 		controller.monster = monster;
 
 		controller.increment = function (attribute, value) {
-			console.log('HEY!');
-			console.log(monster);
-			console.log(attribute);
-			console.log(value);
 			monster[attribute] += value;
 		}
 	}
