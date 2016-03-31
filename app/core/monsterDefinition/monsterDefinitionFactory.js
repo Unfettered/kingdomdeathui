@@ -12,6 +12,7 @@
 		this.definitions = {
 			'White Lion': {
 				'Prologue': {
+					huntSetup:null,
 					attributes: {
 						accuracy: 0,
 						damage: 0,
@@ -39,6 +40,21 @@
 					}
 				},
 				'Level 1': {
+					huntSetup:[
+						'P',
+						'S',
+						'S',
+						'B',
+						'M',
+						'B',
+						'O',
+						'B',
+						'S',
+						'S',
+						'B',
+						'B',
+						'B'
+					],
 					attributes: {
 						accuracy: 0,
 						damage: 0,
@@ -57,6 +73,21 @@
 					}
 				},
 				'Level 2': {
+					huntSetup:[
+						'P',
+						'S',
+						'S',
+						'B',
+						'B',
+						'B',
+						'O',
+						'M',
+						'S',
+						'S',
+						'B',
+						'B',
+						'B'
+					],
 					attributes: {
 						accuracy: 0,
 						damage: 0,
@@ -77,6 +108,21 @@
 					}
 				},
 				'Level 3': {
+					huntSetup:[
+						'P',
+						'S',
+						'S',
+						'B',
+						'B',
+						'B',
+						'O',
+						'B',
+						'S',
+						'S',
+						'B',
+						'B',
+						'M'
+					],
 					attributes: {
 						accuracy: 2,
 						damage: 0,
@@ -103,6 +149,7 @@
 		factory.getDefinition = getDefinition;
 		factory.getMonsters = getMonsters;
 		factory.getMonsterLevels = getMonsterLevels;
+		factory.getMonsterAiDeckDefinition = getMonsterAiDeckDefinition;
 		function getDefinition(monsterName, level){
 			return this.definitions[monsterName][level];
 		}
@@ -121,6 +168,10 @@
 				list.push(aiLevel);
 			}
 			return list;
+		}
+
+		function getMonsterAiDeckDefinition(monsterName, aiLevel){
+			return this.definitions[monsterName][aiLevel].aiDecks;
 		}
 		return factory;
 	}

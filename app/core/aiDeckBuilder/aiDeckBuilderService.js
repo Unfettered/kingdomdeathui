@@ -4,16 +4,14 @@
 		.module('core.aiDeckBuilder')
 		.service('aiDeckBuilder', aiDeckBuilder);
 
-	aiDeckBuilder.$inject = ['card', 'monster', 'monsterCardLibrary', 'monsterDefinition', 'deck'];
+	aiDeckBuilder.$inject = ['monsterCardLibrary', 'monsterDefinition'];
 
-	function aiDeckBuilder(card, monster, monsterCardLibrary, monsterDefinition, deck) {
-		this.cardService = card;
+	function aiDeckBuilder(monsterCardLibrary, monsterDefinition) {
 		this.monsterDeckDefinitionRepository = monsterDefinition;
 		this.monsterCardLibrary = monsterCardLibrary;
 		this.generateDeck = generateDeck;
 		function generateDeck(monster) {
-			var monsterDefinition = this.monsterDeckDefinitionRepository.getDefinition(monster.name,monster.level);
-			var deckDefinition = monsterDefinition.aiDecks;
+			var deckDefinition = this.monsterDeckDefinitionRepository.getMonsterAiDeckDefinition(monster.name, monster.level);
 
 			monster.aiDeck.flush();
 			monster.starterDeck.flush();
