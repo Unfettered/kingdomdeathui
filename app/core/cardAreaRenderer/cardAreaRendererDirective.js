@@ -5,7 +5,7 @@
 		.directive('cardAreaRenderer', cardAreaRenderer);
 
 
-	function cardAreaRenderer() {
+	function cardAreaRenderer($compile) {
 		var directiveDefinitionObject = {
 			restrict: 'C',
 			scope: '=',
@@ -29,8 +29,9 @@
 						} else {
 							imagePath = card.getCardBackPath();
 						}
-						var cardHtml = '<img deck-index="'+cardInterator+'" src="' + imagePath + '" class="game-card">';
-						angular.element(element.find('div')[1]).append(cardHtml);
+						var cardHtml = '<img deck-index="'+cardInterator+'" src="' + imagePath + '" class="light-box game-card">';
+						var newCard = $compile(cardHtml)(scope);
+						angular.element(element.find('div')[1]).append(newCard);
 					}
 				});
 			}

@@ -123,7 +123,7 @@
 					],
 					advanced: [
 						"Alert",
-						"Blood Thirsty",
+						"Bloodthirsty",
 						"Bloody Claw",
 						"Enraged",
 						"Ground Fighting",

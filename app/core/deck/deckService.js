@@ -23,7 +23,10 @@
 			}
 
 			function addCard(card) {
-				this.cards.push(card);
+				if(!card){
+					return;
+				}
+				this.cards.unshift(card);
 			}
 
 			function shuffle() {
@@ -38,6 +41,9 @@
 			}
 
 			function pullNextCard() {
+				if (this.cards.length < 1) {
+					return null;
+				}
 				var card = this.cards.splice(0, 1)[0];
 				return card;
 			}
