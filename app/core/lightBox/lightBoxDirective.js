@@ -9,7 +9,7 @@
 			restrict: 'C',
 			scope: '=',
 			link: function (scope, element, attrs) {
-				element.bind('click', showCard);
+				element.bind('dblclick', showCard);
 			}
 		};
 		function showCard(){

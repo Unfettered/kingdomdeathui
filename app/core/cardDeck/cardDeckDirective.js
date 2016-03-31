@@ -41,7 +41,7 @@
 
 					var modal = $compile(modalHtml)(scope);
 					$('body').append(modal);
-					element.bind('click', showDeck);
+					element.bind('dblclick', showDeck);
 				});
 			}
 		};
