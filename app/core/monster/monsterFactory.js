@@ -23,7 +23,8 @@
 			aiDiscardDeck: deck.get('AI'),
 			resourceDeck: deck.get('Resource'),
 			woundDeck:deck.get('AI'),
-			starterDeck:deck.get('AI')
+			starterDeck:deck.get('AI'),
+			moodDeck:deck.get('AI')
 		}
 
 	}

@@ -358,6 +358,19 @@ div[name=main]{
   float:left;
 }
 
+
+.card-area{
+  min-width:184mm;
+  height:68.75mm;
+  border: lightgrey 1mm solid;
+  display: block;
+  -moz-border-radius: 2%;
+  -webkit-border-radius: 2%;
+  border-radius: 2%;
+  margin: 8px;
+  float:left;
+}
+
 .card-slot{
   display: table;
 }

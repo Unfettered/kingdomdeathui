@@ -1,11 +1,11 @@
 (function () {
 	'use strict';
 	angular
-		.module('core.deckRenderer')
-		.directive('deckRenderer', deckRenderer);
+		.module('core.cardAreaRenderer')
+		.directive('cardAreaRenderer', cardAreaRenderer);
 
 
-	function deckRenderer() {
+	function cardAreaRenderer() {
 		var directiveDefinitionObject = {
 			restrict: 'C',
 			scope: '=',
@@ -21,14 +21,17 @@
 						return;
 					}
 					angular.element(element.find('div')[1]).html('');
-					var imagePath = '';
-					if (cardFacing == 'front') {
-						imagePath  = deck.cards[0].getCardFrontPath();
-					} else {
-						imagePath  = deck.cards[0].getCardBackPath();
+					for( var cardInterator in deck) {
+						var card = deck.cards[cardInterator];
+						var imagePath = '';
+						if (cardFacing == 'front') {
+							imagePath = card.getCardFrontPath();
+						} else {
+							imagePath = card.getCardBackPath();
+						}
+						var cardHtml = '<img src="' + imagePath + '" class="game-card">';
+						angular.element(element.find('div')[1]).append(cardHtml);
 					}
-					var cardHtml = '<img src="'+imagePath+'" class="game-card">';
-					angular.element(element.find('div')[1]).append(cardHtml);
 				});
 			}
 		};

@@ -15,6 +15,7 @@
 		'core.aiDeckBuilder',
 		'core.toggleTokenClass',
 		'core.deckRenderer',
+		'core.cardAreaRenderer',
 		'ui.router',
 		'ui.bootstrap',
 	]);
