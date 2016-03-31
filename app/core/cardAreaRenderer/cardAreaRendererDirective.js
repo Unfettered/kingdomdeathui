@@ -21,7 +21,7 @@
 						return;
 					}
 					angular.element(element.find('div')[1]).html('');
-					for( var cardInterator in deck) {
+					for( var cardInterator in deck.cards) {
 						var card = deck.cards[cardInterator];
 						var imagePath = '';
 						if (cardFacing == 'front') {
@@ -29,7 +29,7 @@
 						} else {
 							imagePath = card.getCardBackPath();
 						}
-						var cardHtml = '<img src="' + imagePath + '" class="game-card">';
+						var cardHtml = '<img deck-index="'+cardInterator+'" src="' + imagePath + '" class="game-card">';
 						angular.element(element.find('div')[1]).append(cardHtml);
 					}
 				});

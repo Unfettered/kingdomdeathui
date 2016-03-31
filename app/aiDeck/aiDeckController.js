@@ -14,5 +14,7 @@
 		aiDeckBuilder.generateDeck(monster);
 		var card = monster.aiDeck.pullNextCard();
 		monster.aiDiscardDeck.addCard(card);
+		monster.moodDeck.addCard(card);
+		monster.moodDeck.addCard(card);
 	}
 })();
