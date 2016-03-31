@@ -338,7 +338,7 @@ div[name=main]{
   cursor: pointer;
 }
 
-.game-card{
+.card-deck, .game-card{
   width:42mm;
   height:66.75mm;
   -moz-border-radius: 2%;

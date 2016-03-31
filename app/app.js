@@ -15,6 +15,7 @@
 		'core.aiDeckBuilder',
 		'core.toggleTokenClass',
 		'core.deckRenderer',
+		'core.cardDeck',
 		'core.lightBox',
 		'core.cardAreaRenderer',
 		'ui.router',

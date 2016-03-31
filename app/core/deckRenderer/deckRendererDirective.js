@@ -26,7 +26,7 @@
 					} else {
 						imagePath  = deck.cards[0].getCardBackPath();
 					}
-					var cardHtml = '<img src="'+imagePath+'" class="light-box game-card">';
+					var cardHtml = '<img src="'+imagePath+'" class="game-card">';
 					var newCard = $compile( cardHtml )( $scope );
 					angular.element($element.find('div')[1]).append(newCard);
 				});
