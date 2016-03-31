@@ -369,6 +369,11 @@ div[name=main]{
   border-radius: 2%;
   margin: 8px;
   float:left;
+
+}
+
+.card-area img{
+  padding-left: 1mm;
 }
 
 .card-slot{
