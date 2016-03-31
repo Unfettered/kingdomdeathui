@@ -101,10 +101,27 @@
 		}
 
 		factory.getDefinition = getDefinition;
+		factory.getMonsters = getMonsters;
+		factory.getMonsterLevels = getMonsterLevels;
 		function getDefinition(monsterName, level){
 			return this.definitions[monsterName][level];
 		}
 
+		function getMonsters(){
+			var list = [];
+			for (var monsterName in this.definitions) {
+				list.push(monsterName);
+			}
+			return list;
+		}
+
+		function getMonsterLevels(monsterName){
+			var list = [];
+			for (var aiLevel in this.definitions[monsterName]) {
+				list.push(aiLevel);
+			}
+			return list;
+		}
 		return factory;
 	}
 
