@@ -15,7 +15,10 @@
 				addCard: addCard,
 				shuffle: shuffle,
 				pullRandomCard: pullRandomCard,
-				pullSpecificCard: pullSpecificCard
+				pullSpecificCard: pullSpecificCard,
+				pullNextCard:pullNextCard,
+				flush:flush,
+				length:length
 
 			}
 
@@ -34,7 +37,20 @@
 				return null;
 			}
 
-			function pullRandomCard(monsterName, type, aiLevel) {
+			function pullNextCard() {
+				var card = this.cards.splice(0, 1)[0];
+				return card;
+			}
+
+			function flush() {
+				this.cards = [];
+			}
+
+			function length() {
+				return this.cards.length;
+			}
+
+			function pullRandomCard() {
 				var size = this.cards.length;
 				var random = Math.floor(Math.random() * size);
 				var card = this.cards.splice(random, 1)[0];

@@ -14,6 +14,7 @@
 		'core.monsterCardLibrary',
 		'core.aiDeckBuilder',
 		'core.toggleTokenClass',
+		'core.deckRenderer',
 		'ui.router',
 		'ui.bootstrap',
 	]);
