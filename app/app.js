@@ -1,6 +1,10 @@
 (function () {
 	'use strict';
-
+	String.prototype.capitalize = function() {
+		return this.replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
+	};
+	
+	
 // Declare app level module which depends on views, and components
 	angular.module('kingdom-death-ui', [
 		'ngRoute',

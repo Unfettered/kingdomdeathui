@@ -175,6 +175,21 @@ div[name=main]{
   background-position: 78px 0px;
 }
 
+
+.toughness-token{
+  background: url(/images/token_sprite_sheet.png);
+  background-size: 1020px 84px;
+  background-position: 78px 0px;
+}
+
+.negative-toughness-token{
+  background: url(/images/token_sprite_sheet.png);
+  background-size: 1020px 84px;
+  background-position: 78px 0px;
+}
+
+
+
 .damage-token{
   background: url(/images/token_sprite_sheet.png);
   background-size: 1020px 84px;

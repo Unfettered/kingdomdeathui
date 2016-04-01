@@ -1,8 +1,8 @@
 <div class='counter-band' ng-repeat="attribute in view.attributes">
-	<div stat="{{attribute}}" class='token-container toggle-token-class'>
+	<div data-toggle="tooltip" title="{{ attribute.capitalize(); }}" stat="{{attribute}}" class='token-container toggle-token-class'>
 		<div class='token {{attribute}}-token'></div>
 		<div class='counter-container'>
-			<div ng-click="view.increment(attribute,1)" class='increment'></div>
+			<div  ng-click="view.increment(attribute,1)" class='increment'></div>
 			<div class='counter'>{{ view.monster[attribute] }}</div>
 			<div ng-click="view.increment(attribute,-1)" class='decrement'></div>
 		</div>

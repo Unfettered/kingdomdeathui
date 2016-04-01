@@ -8,7 +8,7 @@
 
 	function tokenTrackerController(monster) {
 		var controller = this;
-		controller.attributes = ['accuracy', 'damage', 'evasion', 'luck', 'movement', 'speed'];
+		controller.attributes = ['accuracy', 'damage', 'evasion', 'luck', 'movement', 'speed', 'toughness'];
 		controller.monster = monster;
 
 		controller.increment = function (attribute, value) {
