@@ -23,6 +23,7 @@
 		'core.cardAreaRenderer',
 		'core.gameCard',
 		'core.cardReceptacle',
+		'core.hitLocationDeckBuilder',
 		'ui.router',
 		'ui.bootstrap',
 	]);

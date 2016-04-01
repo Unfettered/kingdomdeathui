@@ -12,7 +12,7 @@
 		this.definitions = {
 			'White Lion': {
 				'Prologue': {
-					huntSetup:null,
+					huntSetup: null,
 					attributes: {
 						accuracy: 0,
 						damage: 0,
@@ -20,7 +20,7 @@
 						luck: 0,
 						movement: 0,
 						speed: 0,
-						toughness:0,
+						toughness: 0,
 					},
 					aiDecks: {
 						starter: [],
@@ -37,10 +37,36 @@
 						basic: 0,
 						advanced: 0,
 						legendary: 0
-					}
+					},
+					HitLocation: [
+						this.cardService.get("Beast’s Back", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Brow", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Chest", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Ear", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Elbow", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Femur", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Flank", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Hand", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Heel", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Knee", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Maw", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Paw", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Ribs", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Scapular Deltoid", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Tail", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Temple", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Tricep", 'White Lion', 'HitLocation'),
+						this.cardService.get("Clever Ploy", 'White Lion', 'HitLocation'),
+						this.cardService.get("Fleshy Gut", 'White Lion', 'HitLocation'),
+						this.cardService.get("Fuzzy Groin", 'White Lion', 'HitLocation'),
+						this.cardService.get("Glorious Mane", 'White Lion', 'HitLocation'),
+						this.cardService.get("Soft Belly", 'White Lion', 'HitLocation'),
+						this.cardService.get("Straining Neck", 'White Lion', 'HitLocation'),
+						this.cardService.get("Strange Hand", 'White Lion', 'HitLocation')
+					],
 				},
 				'Level 1': {
-					huntSetup:[
+					huntSetup: [
 						'P',
 						'S',
 						'S',
@@ -62,7 +88,7 @@
 						luck: 0,
 						movement: 0,
 						speed: 0,
-						Toughness:0,
+						Toughness: 0,
 					},
 					aiDecks: {
 						starter: [],
@@ -70,10 +96,36 @@
 						basic: 7,
 						advanced: 3,
 						legendary: 0
-					}
+					},
+					HitLocation: [
+						this.cardService.get("Beast’s Back", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Brow", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Chest", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Ear", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Elbow", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Femur", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Flank", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Hand", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Heel", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Knee", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Maw", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Paw", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Ribs", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Scapular Deltoid", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Tail", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Temple", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Tricep", 'White Lion', 'HitLocation'),
+						this.cardService.get("Clever Ploy", 'White Lion', 'HitLocation'),
+						this.cardService.get("Fleshy Gut", 'White Lion', 'HitLocation'),
+						this.cardService.get("Fuzzy Groin", 'White Lion', 'HitLocation'),
+						this.cardService.get("Glorious Mane", 'White Lion', 'HitLocation'),
+						this.cardService.get("Soft Belly", 'White Lion', 'HitLocation'),
+						this.cardService.get("Straining Neck", 'White Lion', 'HitLocation'),
+						this.cardService.get("Strange Hand", 'White Lion', 'HitLocation')
+					],
 				},
 				'Level 2': {
-					huntSetup:[
+					huntSetup: [
 						'P',
 						'S',
 						'S',
@@ -95,7 +147,7 @@
 						luck: 0,
 						movement: 0,
 						speed: 0,
-						Toughness:0,
+						Toughness: 0,
 					},
 					aiDecks: {
 						starter: [
@@ -105,10 +157,36 @@
 						basic: 10,
 						advanced: 5,
 						legendary: 0
-					}
+					},
+					HitLocation: [
+						this.cardService.get("Beast’s Back", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Brow", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Chest", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Ear", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Elbow", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Femur", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Flank", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Hand", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Heel", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Knee", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Maw", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Paw", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Ribs", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Scapular Deltoid", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Tail", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Temple", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Tricep", 'White Lion', 'HitLocation'),
+						this.cardService.get("Clever Ploy", 'White Lion', 'HitLocation'),
+						this.cardService.get("Fleshy Gut", 'White Lion', 'HitLocation'),
+						this.cardService.get("Fuzzy Groin", 'White Lion', 'HitLocation'),
+						this.cardService.get("Glorious Mane", 'White Lion', 'HitLocation'),
+						this.cardService.get("Soft Belly", 'White Lion', 'HitLocation'),
+						this.cardService.get("Straining Neck", 'White Lion', 'HitLocation'),
+						this.cardService.get("Strange Hand", 'White Lion', 'HitLocation')
+					],
 				},
 				'Level 3': {
-					huntSetup:[
+					huntSetup: [
 						'P',
 						'S',
 						'S',
@@ -130,7 +208,7 @@
 						luck: 1,
 						movement: 0,
 						speed: 0,
-						Toughness:0,
+						Toughness: 0,
 					},
 					aiDecks: {
 						starter: [
@@ -141,7 +219,30 @@
 						basic: 10,
 						advanced: 9,
 						legendary: 2
-					}
+					},
+					HitLocation: [
+						this.cardService.get("Beast’s Back", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Brow", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Chest", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Ear", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Elbow", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Femur", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Flank", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Hand", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Heel", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Knee", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Maw", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Ribs", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Scapular Deltoid", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Tail", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Temple", 'White Lion', 'HitLocation'),
+						this.cardService.get("Beast’s Tricep", 'White Lion', 'HitLocation'),
+						this.cardService.get("Clever Ploy", 'White Lion', 'HitLocation'),
+						this.cardService.get("Fleshy Gut", 'White Lion', 'HitLocation'),
+						this.cardService.get("Fuzzy Groin", 'White Lion', 'HitLocation'),
+						this.cardService.get("Glorious Mane", 'White Lion', 'HitLocation'),
+						this.cardService.get("Soft Belly", 'White Lion', 'HitLocation'),
+					],
 				}
 			}
 		}
@@ -150,11 +251,12 @@
 		factory.getMonsters = getMonsters;
 		factory.getMonsterLevels = getMonsterLevels;
 		factory.getMonsterAiDeckDefinition = getMonsterAiDeckDefinition;
-		function getDefinition(monsterName, level){
+		factory.getMonsterHitLocationDeckDefinition =getMonsterHitLocationDeckDefinition;
+		function getDefinition(monsterName, level) {
 			return this.definitions[monsterName][level];
 		}
 
-		function getMonsters(){
+		function getMonsters() {
 			var list = [];
 			for (var monsterName in this.definitions) {
 				list.push(monsterName);
@@ -162,7 +264,7 @@
 			return list;
 		}
 
-		function getMonsterLevels(monsterName){
+		function getMonsterLevels(monsterName) {
 			var list = [];
 			for (var aiLevel in this.definitions[monsterName]) {
 				list.push(aiLevel);
@@ -170,9 +272,15 @@
 			return list;
 		}
 
-		function getMonsterAiDeckDefinition(monsterName, aiLevel){
+		function getMonsterAiDeckDefinition(monsterName, aiLevel) {
 			return this.definitions[monsterName][aiLevel].aiDecks;
 		}
+
+		function getMonsterHitLocationDeckDefinition(monsterName, aiLevel) {
+			return this.definitions[monsterName][aiLevel].HitLocation;
+		}
+
+
 		return factory;
 	}
 
