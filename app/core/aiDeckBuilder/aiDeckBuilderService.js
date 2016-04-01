@@ -28,8 +28,9 @@
 			for (var i = 0; i < deckDefinition.legendary; i++) {
 				monster.aiDeck.addCard(monsterCardLibrary.pullRandomCard(monster.name, 'AI', 'legendary'));
 			}
-			for (var card in deckDefinition.starter) {
-				monster.starterDeck.addCard(monsterCardLibrary.pullSpecificCard(card.monster, 'AI', 'starter', card.name));
+			for (var cardIndex in deckDefinition.starter) {
+				card = deckDefinition.starter[cardIndex];
+				monster.starterDeck.addCard(card);
 			}
 		}
 	}

@@ -361,7 +361,7 @@ div[name=main]{
   border-radius: 2%;
 }
 
-.card-receptacle{
+.deck{
   width:44mm;
   height:68.75mm;
   border: lightgrey 1mm solid;
@@ -373,6 +373,9 @@ div[name=main]{
   float:left;
 }
 
+.highlighted-area{
+  box-shadow: 5px 5px 5px 5px rgba(184, 134, 0, 0.3);
+}
 
 .card-area{
   min-width:184mm;
@@ -384,6 +387,7 @@ div[name=main]{
   border-radius: 2%;
   margin: 8px;
   float:left;
+  display: table;
 
 }
 
@@ -405,6 +409,24 @@ div[name=main]{
   display:table-cell;
   height:100%;
 }
-.ai-region{
-  display:inline-block;
+
+
+.card-area > div{
+  display: table-row;
+  height:100%;
+}
+.card-area > div > div{
+  font-size:2.5em;
+  text-align: center;
+  vertical-align: middle;
+  display:table-cell;
+  height:100%;
+}
+
+.deck img{
+  width:42mm;
+  height:66.75mm;
+  -moz-border-radius: 2%;
+  -webkit-border-radius: 2%;
+  border-radius: 2%;
 }

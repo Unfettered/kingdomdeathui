@@ -3,8 +3,9 @@
 	angular
 		.module('core.cardDeck')
 		.directive('cardDeck', cardDeck);
+	cardDeck.$inject = ['monster', '$compile'];
 
-	function cardDeck($compile) {
+	function cardDeck(monster, $compile) {
 		var directiveDefinitionObject = {
 			restrict: 'C',
 			scope: '=',
@@ -43,12 +44,42 @@
 					$('body').append(modal);
 					element.bind('dblclick', showDeck);
 				});
+
+				element.bind('dragstart', dragCardFromDeck);
+				element.bind('dragend', dropCardFromDeck);
+
+
+				function showDeck() {
+					$('#' + $(this).attr('deck-name') + 'Modal').modal();
+				}
+
+				function dragCardFromDeck(event) {
+					this.scope = scope;
+					this.deckName = deckName;
+					this.monster = monster;
+
+					//WTF
+						monster.activeCard = monster[deckName].pullNextCard();
+
+				}
+
+				function dropCardFromDeck(event) {
+					this.scope = scope;
+					this.deckName = deckName;
+					this.monster = monster;
+
+					//no target aquired
+					if (!$('.highlighted-area').length && this.monster.activeCard) {
+						scope.$apply(function(){
+							monster[deckName].addCard(monster.activeCard);
+						});
+						this.monster.activeCard = null;
+					}
+
+				}
+
 			}
 		};
-
-		function showDeck() {
-			$('#' + $(this).attr('deck-name') + 'Modal').modal();
-		}
 
 		return directiveDefinitionObject;
 	}

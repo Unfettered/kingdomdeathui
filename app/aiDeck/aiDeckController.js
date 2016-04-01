@@ -10,14 +10,7 @@
 		var controller = this;
 		controller.monster = monster;
 		controller.monster.name = "White Lion";
-		controller.monster.level = "Level 1";
+		controller.monster.level = "Level 3";
 		aiDeckBuilder.generateDeck(monster);
-		monster.aiDiscardDeck.addCard(monster.aiDeck.pullNextCard());
-		monster.moodDeck.addCard(monster.aiDeck.pullNextCard());
-		monster.moodDeck.addCard(monster.aiDeck.pullNextCard());
-		controller.drawAiCard=drawAiCard;
-		function drawAiCard(){
-			monster.aiDiscardDeck.addCard(monster.aiDeck.pullNextCard());
-		}
 	}
 })();

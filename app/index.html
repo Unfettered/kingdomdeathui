@@ -1,88 +1,99 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="kingdom-death-ui" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="kingdom-death-ui" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="kingdom-death-ui" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="kingdom-death-ui" class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>
+<html lang="en" ng-app="kingdom-death-ui" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="kingdom-death-ui" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="kingdom-death-ui" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="kingdom-death-ui" class="no-js"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>KD: Monster Manager</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/bower_components/html5-boilerplate/dist/css/normalize.css">
-  <link rel="stylesheet" href="/bower_components/html5-boilerplate/dist/css/main.css">
-  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.css">
-  <link rel="stylesheet" href="app.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>KD: Monster Manager</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/bower_components/html5-boilerplate/dist/css/normalize.css">
+	<link rel="stylesheet" href="/bower_components/html5-boilerplate/dist/css/main.css">
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.css">
+	<link rel="stylesheet" href="app.css">
 
 </head>
-<body >
-  <!--[if lt IE 7]>
-  <p>You are using an <strong>outdated</strong> browser. Please stop that</p>
-  <![endif]-->
+<body>
+<!--[if lt IE 7]>
+<p>You are using an <strong>outdated</strong> browser. Please stop that</p>
+<![endif]-->
 
-  <div ui-view >
-    OH GOD NOTHING HAS LOADED
-  </div>
+<div ui-view>
+	OH GOD NOTHING HAS LOADED
+</div>
 
-  <script src="/bower_components/angular/angular.js"></script>
-  <script src="/bower_components/jquery/dist/jquery.js"></script>
-  <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-  <script src="/bower_components/angular-route/angular-route.js"></script>
-  <script src="/bower_components/angular-bootstrap/ui-bootstrap.js"></script>
-  <script src="app.js"></script>
-  <script src="appConfig.js"></script>
-  <!-- hey matt you're going to forget this, please don't -->
-  <script src="login/loginModule.js"></script>
-  <script src="login/loginController.js"></script>
+<script src="/bower_components/angular/angular.js"></script>
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="/bower_components/angular-route/angular-route.js"></script>
+<script src="/bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+<script src="app.js"></script>
+<script src="appConfig.js"></script>
+<!-- hey matt you're going to forget this, please don't -->
+<script src="login/loginModule.js"></script>
+<script src="login/loginController.js"></script>
 
-  <script src="setup/setupModule.js"></script>
-  <script src="setup/setupController.js"></script>
+<script src="setup/setupModule.js"></script>
+<script src="setup/setupController.js"></script>
 
-  <script src="setup/monsterList/monsterListModule.js"></script>
-  <script src="setup/monsterList/monsterListController.js"></script>
+<script src="setup/monsterList/monsterListModule.js"></script>
+<script src="setup/monsterList/monsterListController.js"></script>
 
-  <script src="tokenTracker/tokenTrackerModule.js"></script>
-  <script src="tokenTracker/tokenTrackerController.js"></script>
+<script src="tokenTracker/tokenTrackerModule.js"></script>
+<script src="tokenTracker/tokenTrackerController.js"></script>
 
-  <script src="aiDeck/aiDeckModule.js"></script>
-  <script src="aiDeck/aiDeckController.js"></script>
+<script src="aiDeck/aiDeckModule.js"></script>
+<script src="aiDeck/aiDeckController.js"></script>
 
-  <script src="core/card/cardModule.js"></script>
-  <script src="core/card/cardService.js"></script>
+<script src="core/card/cardModule.js"></script>
+<script src="core/card/cardService.js"></script>
 
 
-  <script src="core/deck/deckModule.js"></script>
-  <script src="core/deck/deckService.js"></script>
+<script src="core/deck/deckModule.js"></script>
+<script src="core/deck/deckService.js"></script>
 
-  <script src="core/aiDeckBuilder/aiDeckBuilderModule.js"></script>
-  <script src="core/aiDeckBuilder/aiDeckBuilderService.js"></script>
+<script src="core/aiDeckBuilder/aiDeckBuilderModule.js"></script>
+<script src="core/aiDeckBuilder/aiDeckBuilderService.js"></script>
 
-  <script src="core/monster/monsterModule.js"></script>
-  <script src="core/monster/monsterFactory.js"></script>
+<script src="core/monster/monsterModule.js"></script>
+<script src="core/monster/monsterFactory.js"></script>
 
-  <script src="core/monsterCardLibrary/monsterCardLibraryModule.js"></script>
-  <script src="core/monsterCardLibrary/monsterCardLibraryFactory.js"></script>
+<script src="core/monsterCardLibrary/monsterCardLibraryModule.js"></script>
+<script src="core/monsterCardLibrary/monsterCardLibraryFactory.js"></script>
 
-  <script src="core/monsterDefinition/monsterDefinitionModule.js"></script>
-  <script src="core/monsterDefinition/monsterDefinitionFactory.js"></script>
+<script src="core/monsterDefinition/monsterDefinitionModule.js"></script>
+<script src="core/monsterDefinition/monsterDefinitionFactory.js"></script>
 
-  <script src="core/toggleTokenClass/toggleTokenClassModule.js"></script>
-  <script src="core/toggleTokenClass/toggleTokenClassDirective.js"></script>
+<script src="core/toggleTokenClass/toggleTokenClassModule.js"></script>
+<script src="core/toggleTokenClass/toggleTokenClassDirective.js"></script>
 
-  <script src="core/deckRenderer/deckRendererModule.js"></script>
-  <script src="core/deckRenderer/deckRendererDirective.js"></script>
+<script src="core/deckRenderer/deckRendererModule.js"></script>
+<script src="core/deckRenderer/deckRendererDirective.js"></script>
 
-  <script src="core/cardAreaRenderer/cardAreaRendererModule.js"></script>
-  <script src="core/cardAreaRenderer/cardAreaRendererDirective.js"></script>
+<script src="core/cardAreaRenderer/cardAreaRendererModule.js"></script>
+<script src="core/cardAreaRenderer/cardAreaRendererDirective.js"></script>
 
-  <script src="core/lightBox/lightBoxModule.js"></script>
-  <script src="core/lightBox/lightBoxDirective.js"></script>
+<script src="core/lightBox/lightBoxModule.js"></script>
+<script src="core/lightBox/lightBoxDirective.js"></script>
 
-  <script src="core/cardDeck/cardDeckModule.js"></script>
-  <script src="core/cardDeck/cardDeckDirective.js"></script>
+<script src="core/cardDeck/cardDeckModule.js"></script>
+<script src="core/cardDeck/cardDeckDirective.js"></script>
 
-  <script src="setup/setupModule.js"></script>
-  <script src="/bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+<script src="core/cardReceptacle/cardReceptacleModule.js"></script>
+<script src="core/cardReceptacle/cardReceptacleDirective.js"></script>
+
+<script src="core/gameCard/gameCardModule.js"></script>
+<script src="core/gameCard/gameCardDirective.js"></script>
+
+
+<script src="setup/setupModule.js"></script>
+<script src="/bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </body>
 </html>

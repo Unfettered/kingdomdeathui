@@ -19,14 +19,27 @@
 			toughness:0,
 			hitLocationDeck: deck.get('HitLocation'),
 			hitLocationDiscardDeck: deck.get('HitLocation'),
+			persistentInjuryDeck:deck.get('HitLocation'),
+
 			aiDeck: deck.get('AI'),
 			aiDiscardDeck: deck.get('AI'),
+			moodDeck:deck.get('AI'),
+
 			resourceDeck: deck.get('Resource'),
-			woundDeck:deck.get('AI'),
+
 			starterDeck:deck.get('AI'),
-			moodDeck:deck.get('AI')
+			woundDeck:deck.get('AI'),
+			getMonsterCardFrontPath:getMonsterCardFrontPath,
+			getMonsterCardBackPath:getMonsterCardBackPath
+
 		}
 
+		function getMonsterCardFrontPath(){
+			return '/images/Monsters/'+this.name+'/'+this.name+'.png';
+		}
+		function getMonsterCardBackPath(){
+			return '/images/Monsters/'+this.name+'/'+this.name+' Back.png';
+		}
 	}
 
 })();

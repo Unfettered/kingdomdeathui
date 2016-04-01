@@ -4,7 +4,6 @@
 		return this.replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
 	};
 	
-	
 // Declare app level module which depends on views, and components
 	angular.module('kingdom-death-ui', [
 		'ngRoute',
@@ -22,6 +21,8 @@
 		'core.cardDeck',
 		'core.lightBox',
 		'core.cardAreaRenderer',
+		'core.gameCard',
+		'core.cardReceptacle',
 		'ui.router',
 		'ui.bootstrap',
 	]);

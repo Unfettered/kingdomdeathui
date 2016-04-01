@@ -1,15 +1,55 @@
+<div class='hit-location-region'>
+	<div class='deck card-slot '>
+		<div>
+			<div>
+				<img src="{{view.monster.getMonsterCardFrontPath()}}" class="light-box game-card">
+			</div>
+		</div>
+	</div>
+	<div   class='deck card-slot'>
+		<div>
+			<div><img src="{{view.monster.getMonsterCardBackPath()}}" class="light-box game-card"></div>
+		</div>
+	</div>
+	<div default-value='Starter Cards' card-facing='front' deck-name='starterDeck' class='card-area card-area-renderer'>
+		<div>
+			<div></div>
+		</div>
+	</div>
+</div>
+
+
 <div class='ai-region'>
-	<div ng-click="view.drawAiCard()" default-value='AI<BR>Deck' card-facing='back' deck-name='aiDeck' class='card-receptacle card-slot ai-deck deck-renderer card-deck'>
+	<div default-value='AI<BR>Deck' card-facing='back' deck-name='aiDeck' class='deck card-receptacle card-slot ai-deck deck-renderer card-deck'>
 		<div>
 			<div>AI<BR>Deck</div>
 		</div>
 	</div>
-	<div  default-value='Discard<BR>Pile' card-facing='front' deck-name='aiDiscardDeck' class='card-deck card-receptacle card-slot deck-renderer'>
+	<div  default-value='Discard<BR>Pile' card-facing='front' deck-name='aiDiscardDeck' class='deck card-deck card-receptacle card-slot deck-renderer'>
 		<div>
 			<div>Discard<BR>Pile</div>
 		</div>
 	</div>
-	<div default-value='Mood/Trait' card-facing='front' deck-name='moodDeck' class='card-area card-area-renderer'>
+	<div default-value='Mood/Trait' card-facing='front' deck-name='moodDeck' class='card-area card-receptacle card-area-renderer'>
+		<div>
+			<div></div>
+		</div>
+	</div>
+</div>
+
+
+<div class='hit-location-region'>
+	<div default-value='Hit<BR>Location<BR>Deck' card-facing='back' deck-name='hitLocationDeck' class='deck card-receptacle card-slot deck-renderer card-deck'>
+		<div>
+			<div>AI<BR>Deck</div>
+		</div>
+	</div>
+	<div  default-value='Discard<BR>Pile' card-facing='front' deck-name='hitLocationDiscardDeck' class='deck card-deck card-receptacle card-slot deck-renderer'>
+		<div>
+			<div>Discard<BR>Pile</div>
+		</div>
+	</div>
+	<div default-value='Persistent<BR>Injuries' card-facing='front' deck-name='persistentInjuryDeck' class='card-area card-receptacle card-area-renderer'>
 		<div>
 			<div></div>
 		</div>

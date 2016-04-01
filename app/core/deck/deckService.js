@@ -18,8 +18,8 @@
 				pullSpecificCard: pullSpecificCard,
 				pullNextCard:pullNextCard,
 				flush:flush,
-				length:length
-
+				length:length,
+				pullCardByIndex:pullCardByIndex
 			}
 
 			function addCard(card) {
@@ -45,6 +45,14 @@
 					return null;
 				}
 				var card = this.cards.splice(0, 1)[0];
+				return card;
+			}
+
+			function pullCardByIndex(index){
+				if (!this.cards[index]) {
+					return null;
+				}
+				var card = this.cards.splice(index, 1)[0];
 				return card;
 			}
 

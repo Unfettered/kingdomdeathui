@@ -39,7 +39,7 @@
 				cardPool = this.library[monsterName][type];
 				drawnPool = this.library[monsterName].drawn[type];
 			}
-			var newCard = cardPool.drawSpecificCard(cardName);
+			var newCard = cardPool.pullSpecificCard(cardName);
 			drawnPool.addCard(newCard);
 
 			return newCard;

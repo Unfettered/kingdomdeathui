@@ -4,12 +4,13 @@
 		.module('core.deckRenderer')
 		.directive('deckRenderer', deckRenderer);
 
+	deckRenderer.$inject = ['monster', '$compile'];
 
-	function deckRenderer( $compile ) {
+	function deckRenderer( monster, $compile ) {
 		var directiveDefinitionObject = {
 			restrict: 'C',
 			scope: '=',
-			controller: function ($scope, $element, $attrs) {
+			link: function ($scope, $element, $attrs) {
 				var deckName = $attrs.deckName;
 				var cardFacing = $attrs.cardFacing;
 				var defaultValue = $attrs.defaultValue;
@@ -26,7 +27,7 @@
 					} else {
 						imagePath  = deck.cards[0].getCardBackPath();
 					}
-					var cardHtml = '<img src="'+imagePath+'" class="game-card">';
+					var cardHtml = '<img src="'+imagePath+'" >';
 					var newCard = $compile( cardHtml )( $scope );
 					angular.element($element.find('div')[1]).append(newCard);
 				});
