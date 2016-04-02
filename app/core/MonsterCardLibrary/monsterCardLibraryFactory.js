@@ -145,7 +145,7 @@
 					"Beast’s Elbow",
 					"Beast’s Femur",
 					"Beast’s Flank",
-					"Beast’s Hand",
+					//"Beast’s Hand",
 					"Beast’s Heel",
 					"Beast’s Knee",
 					"Beast’s Maw",

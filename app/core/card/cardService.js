@@ -29,6 +29,10 @@
 				} else {
 					imagePath = '/images/Monsters/' + this.monster + '/' + this.type + '/' + this.name + '.png';
 				}
+
+				imagePath = imagePath.replace('\'','');
+				imagePath = imagePath.replace('’','');
+
 				return imagePath;
 			}
 			return newCard;

@@ -15,8 +15,9 @@
 
 			monster.hitLocationDeck.flush();
 
-			for (var card in deckDefinition) {
-				monster.hitLocationDeck.addCard(monsterCardLibrary.pullSpecificCard(card.monster, 'hitLocation', card.name));
+			for (var cardIndex in deckDefinition) {
+				var card = deckDefinition[cardIndex];
+				monster.hitLocationDeck.addCard(card);
 			}
 
 		}
