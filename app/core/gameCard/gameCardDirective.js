@@ -23,6 +23,7 @@
 					this.deckName = deckName;
 					this.monster = monster;
 					monster.activeCard = monster[deckName].pullCardByIndex(deckIndex);
+					debugger;
 				}
 
 				function dropCardFromDeck(event) {
@@ -30,9 +31,7 @@
 					this.deckName = deckName;
 					this.monster = monster;
 
-					debugger;
-
-					//no target aquired
+					//no target acquired
 					if (!$('.highlighted-area').length && this.monster.activeCard) {
 						scope.$apply(function(){
 							monster[deckName].addCard(monster.activeCard);
