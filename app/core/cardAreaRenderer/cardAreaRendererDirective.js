@@ -13,7 +13,12 @@
 				var deckName = attrs.deckName;
 				var cardFacing = attrs.cardFacing;
 				var defaultValue = attrs.defaultValue;
-				scope.$watch('view.monster.' + deckName + '.length()', function () {
+				scope.$watchGroup(
+					['view.monster.' + deckName + '.length()', 'view.monster.' + deckName + '.cards[0].name' ],
+					renderCardArea
+				);
+
+				function renderCardArea() {
 					var deck = scope.view.monster[deckName];
 
 					if (deck.length() < 1) {
@@ -33,7 +38,7 @@
 						var newCard = $compile(cardHtml)(scope);
 						angular.element(element.find('div')[1]).append(newCard);
 					}
-				});
+				}
 			}
 		};
 		return directiveDefinitionObject;

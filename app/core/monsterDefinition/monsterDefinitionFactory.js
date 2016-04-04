@@ -4,11 +4,12 @@
 		.module('core.monsterDefinition')
 		.factory('monsterDefinition', monsterDefinition);
 
-	monsterDefinition.$inject = ['card'];
+	monsterDefinition.$inject = ['card','monsterCardLibrary'];
 
-	function monsterDefinition(card) {
+	function monsterDefinition(card,monsterCardLibrary) {
 		var factory = this;
 		this.cardService = card;
+		this.monsterCardLibrary = monsterCardLibrary;
 		this.definitions = {
 			'White Lion': {
 				'Prologue': {
@@ -252,6 +253,7 @@
 		factory.getMonsterLevels = getMonsterLevels;
 		factory.getMonsterAiDeckDefinition = getMonsterAiDeckDefinition;
 		factory.getMonsterHitLocationDeckDefinition =getMonsterHitLocationDeckDefinition;
+		factory.getMonsterResourceDeckDefinition = getMonsterResourceDeckDefinition;
 		function getDefinition(monsterName, level) {
 			return this.definitions[monsterName][level];
 		}
@@ -280,6 +282,9 @@
 			return this.definitions[monsterName][aiLevel].HitLocation;
 		}
 
+		function getMonsterResourceDeckDefinition(monsterName){
+			return angular.copy(this.monsterCardLibrary.library[monsterName].Resource);
+		}
 
 		return factory;
 	}

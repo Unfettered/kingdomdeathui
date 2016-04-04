@@ -1,63 +1,116 @@
-<div class='hit-location-region'>
-	<div class='deck card-slot '>
-		<div>
+<div>
+	<div class='hit-location-region'>
+		<div class='deck card-slot '>
 			<div>
-				<img src="{{view.monster.getMonsterCardFrontPath()}}" class="light-box game-card">
+				<div>
+					<img src="{{view.monster.getMonsterCardFrontPath()}}" class="light-box">
+				</div>
+			</div>
+		</div>
+		<div class='deck card-slot'>
+			<div>
+				<div><img src="{{view.monster.getMonsterCardBackPath()}}" class="light-box"></div>
+			</div>
+		</div>
+		<div default-value='Starter Cards' card-facing='front' deck-name='starterDeck'
+			 class='card-area card-area-renderer'>
+			<div>
+				<div></div>
+			</div>
+		</div>
+		<div default-value='Archived<BR>Cards' card-facing='front' deck-name='archiveDeck'
+			 class='deck card-receptacle card-slot ai-deck deck-renderer card-deck'>
+			<div>
+				<div></div>
 			</div>
 		</div>
 	</div>
-	<div   class='deck card-slot'>
-		<div>
-			<div><img src="{{view.monster.getMonsterCardBackPath()}}" class="light-box game-card"></div>
-		</div>
-	</div>
-	<div default-value='Starter Cards' card-facing='front' deck-name='starterDeck' class='card-area card-area-renderer'>
-		<div>
-			<div></div>
-		</div>
-	</div>
-</div>
-
-
-<div class='ai-region'>
-	<div default-value='AI<BR>Deck' card-facing='back' deck-name='aiDeck' class='deck card-receptacle card-slot ai-deck deck-renderer card-deck'>
-		<div>
-			<div>AI<BR>Deck</div>
-		</div>
-	</div>
-	<div  default-value='Discard<BR>Pile' card-facing='front' deck-name='aiDiscardDeck' class='deck card-deck card-receptacle card-slot deck-renderer'>
-		<div>
-			<div>Discard<BR>Pile</div>
-		</div>
-	</div>
-	<div default-value='Mood/Trait' card-facing='front' deck-name='moodDeck' class='card-area card-receptacle card-area-renderer'>
-		<div>
-			<div></div>
-		</div>
-	</div>
-</div>
-
-
-<div class='hit-location-region'>
-	<div default-value='Hit<BR>Location<BR>Deck' card-facing='back' deck-name='hitLocationDeck' class='deck card-receptacle card-slot deck-renderer card-deck'>
-		<div>
+	<div class='play-area-region'>
+		<div style='width:280mm' default-value='In Play Area' card-facing='front' deck-name='playAreaDeck'
+			 class='card-area card-receptacle card-area-renderer'>
 			<div>
-				Hit<BR>Location<BR>Deck
+				<div></div>
+			</div>
+		</div>
+		<div default-value='Wound<BR>Deck' card-facing='back' deck-name='woundDeck'
+			 class='deck card-receptacle card-slot ai-deck deck-renderer card-deck'>
+			<div>
+				<div></div>
 			</div>
 		</div>
 	</div>
-	<div  default-value='Discard<BR>Pile' card-facing='front' deck-name='hitLocationDiscardDeck' class='deck card-deck card-receptacle card-slot deck-renderer'>
-		<div>
+
+
+	<div class='ai-region'>
+		<div default-value='AI<BR>Deck' card-facing='back' deck-name='aiDeck'
+			 class='deck card-receptacle card-slot ai-deck deck-renderer card-deck'>
 			<div>
-				Discard<BR>Pile
+				<div>AI<BR>Deck</div>
+			</div>
+		</div>
+		<div default-value='Discard<BR>Pile' card-facing='front' deck-name='aiDiscardDeck'
+			 class='deck card-deck card-receptacle card-slot deck-renderer'>
+			<div>
+				<div>Discard<BR>Pile</div>
+			</div>
+		</div>
+		<div default-value='Mood/Trait' card-facing='front' deck-name='moodDeck'
+			 class='card-area card-receptacle card-area-renderer'>
+			<div>
+				<div></div>
+			</div>
+		</div>
+		<div default-value='Resource<BR>Deck' card-facing='back' deck-name='resourceDeck'
+			 class='deck card-receptacle card-slot ai-deck deck-renderer card-deck'>
+			<div>
+				<div></div>
 			</div>
 		</div>
 	</div>
-	<div default-value='Persistent<BR>Injuries' card-facing='front' deck-name='persistentInjuryDeck' class='card-area card-receptacle card-area-renderer'>
-		<div>
+
+
+	<div class='hit-location-region'>
+		<div default-value='Hit<BR>Location<BR>Deck' card-facing='back' deck-name='hitLocationDeck'
+			 class='deck card-receptacle card-slot deck-renderer card-deck'>
 			<div>
-				Persistent<BR>Injuries
+				<div>
+					Hit<BR>Location<BR>Deck
+				</div>
+			</div>
+		</div>
+		<div default-value='Discard<BR>Pile' card-facing='front' deck-name='hitLocationDiscardDeck'
+			 class='deck card-deck card-receptacle card-slot deck-renderer'>
+			<div>
+				<div>
+					Discard<BR>Pile
+				</div>
+			</div>
+		</div>
+		<div default-value='Persistent<BR>Injuries' card-facing='front' deck-name='persistentInjuryDeck'
+			 class='card-area card-receptacle card-area-renderer'>
+			<div>
+				<div>
+					Persistent<BR>Injuries
+				</div>
+			</div>
+		</div>
+		<div default-value='Drawn<BR>Resource' card-facing='front' deck-name='drawnResourceDeck'
+			 class='deck card-receptacle card-slot ai-deck deck-renderer card-deck'>
+			<div>
+				<div></div>
 			</div>
 		</div>
 	</div>
+<!--
+	<div id="modals">
+		<div class="modal fade" id="archiveDeckModal" tabindex="-1" role="dialog" aria-labelledby="Archived Cards"></div>
+		<div class="modal fade" id="woundDeckModal" tabindex="-1" role="dialog" aria-labelledby="Wounds"></div>
+		<div class="modal fade" id="aiDeckModal" tabindex="-1" role="dialog" aria-labelledby="AI Deck"></div>
+		<div class="modal fade" id="discardDeckModal" tabindex="-1" role="dialog" aria-labelledby="AI Discard"></div>
+		<div class="modal fade" id="resourceDeckModal" tabindex="-1" role="dialog" aria-labelledby="Resource Deck"></div>
+		<div class="modal fade" id="hitLocationDeckModal" tabindex="-1" role="dialog" aria-labelledby="Hit Location Deck"></div>
+		<div class="modal fade" id="hitLocationDiscardDeckModal" tabindex="-1" role="dialog" aria-labelledby="Hit Location Discard"></div>
+		<div class="modal fade" id="drawnResourceDeck" tabindex="-1" role="dialog" aria-labelledby="Drawn Resources"></div>
+	</div>
+-->
 </div>

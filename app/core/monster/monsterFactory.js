@@ -26,9 +26,12 @@
 			moodDeck:deck.get('AI'),
 
 			resourceDeck: deck.get('Resource'),
+			drawnResourceDeck: deck.get('Resource'),
 
 			starterDeck:deck.get('AI'),
 			woundDeck:deck.get('AI'),
+			playAreaDeck:deck.get('All'),
+			archiveDeck:deck.get('All'),
 			getMonsterCardFrontPath:getMonsterCardFrontPath,
 			getMonsterCardBackPath:getMonsterCardBackPath
 

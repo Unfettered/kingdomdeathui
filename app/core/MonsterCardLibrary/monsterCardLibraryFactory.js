@@ -92,7 +92,7 @@
 				this.library[monsterName].drawn['Resource'] = deckService.get('Drawn Resource');
 				this.library[monsterName]['Resource'] = deckService.get('Resource');
 				for (var cardNameIndex in this.libraryDefinition[monsterName]['Resource']) {
-					var cardName = this.libraryDefinition[monsterName]['Hunt'][cardNameIndex];
+					var cardName = this.libraryDefinition[monsterName]['Resource'][cardNameIndex];
 					this.library[monsterName]['Resource'].addCard( cardService.get(cardName, monsterName, 'Resource') );
 				}
 			}

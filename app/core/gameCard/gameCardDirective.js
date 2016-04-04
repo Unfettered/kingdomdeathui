@@ -30,6 +30,8 @@
 					this.deckName = deckName;
 					this.monster = monster;
 
+					debugger;
+
 					//no target aquired
 					if (!$('.highlighted-area').length && this.monster.activeCard) {
 						scope.$apply(function(){

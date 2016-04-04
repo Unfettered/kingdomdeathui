@@ -24,6 +24,7 @@
 		'core.gameCard',
 		'core.cardReceptacle',
 		'core.hitLocationDeckBuilder',
+		'core.resourceDeckBuilder',
 		'ui.router',
 		'ui.bootstrap',
 	]);

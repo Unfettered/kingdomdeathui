@@ -1,4 +1,4 @@
 (function () {
 	'use strict';
-	angular.module('core.monsterCardLibrary', ['core.card','core.deck']);
+	angular.module('core.monsterCardLibrary', ['core.card','core.deck', 'core.monsterCardLibrary']);
 })();
