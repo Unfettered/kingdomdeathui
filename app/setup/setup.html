@@ -1,1 +1,18 @@
-<p>This is the partial for SETUP.</p>
+<div class="container">
+	<div class="card card-container">
+		<img id="profile-img" class="profile-img-card" src="/images/kingdom-death-logo-inverse.jpg" />
+		<p id="profile-name" class="profile-name-card"></p>
+		<form class="form-monster-selection">
+			<label class="formLabel">Monster</label>
+			<select name="monsterName" class="form-control" required autofocus ng-model="view.monster.name" ng-change="view.getMonsterLevels()">
+				<option></option>
+				<option ng-repeat="monsterName in view.monsterList" value="{{monsterName}}">{{monsterName}}</option>
+			</select>
+			<label class="formLabel">Level</label>
+			<select id="monsterLevel" class="form-control" required>
+			</select>
+			<BR>
+			<button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Load Monster</button>
+		</form>
+	</div><!-- /card-container -->
+</div><!-- /container -->

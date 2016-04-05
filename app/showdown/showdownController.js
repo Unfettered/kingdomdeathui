@@ -4,7 +4,7 @@
 	angular.module('kingdom-death-ui.showdown')
 		.controller('showdownController', showdownController);
 
-	showdownController.$inject = ['monster','aiDeckBuilder', 'hitLocationDeckBuilder', 'resourceDeckBuilder'];
+	showdownController.$inject = ['monster', 'aiDeckBuilder', 'hitLocationDeckBuilder', 'resourceDeckBuilder'];
 
 	function showdownController(monster, aiDeckBuilder, hitLocationDeckBuilder, resourceDeckBuilder) {
 		var controller = this;
