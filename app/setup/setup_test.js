@@ -8,8 +8,8 @@ describe('kingdom-death-ui.setup module', function() {
 
     it('should ....', inject(function($controller) {
       //spec body
-      var setupCtrl = $controller('setupCtrl');
-      expect(setupCtrl).toBeDefined();
+      var setupController = $controller('setupController');
+      expect(setupController).toBeDefined();
     }));
 
   });

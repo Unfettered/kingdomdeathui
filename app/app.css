@@ -171,103 +171,103 @@ div[name=main]{
 
 .bleeding-token{
   background: url(/images/token_sprite_sheet.png);
-  background-size: 1020px 84px;
-  background-position: 78px 0px;
+  background-size: 72.86em 6em;
+  background-position: 5.56em 0em;
 }
 
 
 .toughness-token{
   background: url(/images/token_sprite_sheet.png);
-  background-size: 1020px 84px;
-  background-position: 78px 0px;
+  background-size: 72.86em 6em;
+  background-position: 5.56em 0em;
 }
 
 .negative-toughness-token{
   background: url(/images/token_sprite_sheet.png);
-  background-size: 1020px 84px;
-  background-position: 78px 0px;
+  background-size: 72.86em 6em;
+  background-position: 5.56em 0em;
 }
 
 
 
 .damage-token{
   background: url(/images/token_sprite_sheet.png);
-  background-size: 1020px 84px;
-  background-position: 235px 0px;
+  background-size: 72.86em 6em;
+  background-position: 16.79em 0em;
 }
 .negative-damage-token{
   background: url(/images/token_sprite_sheet.png);
-  background-size: 1020px 84px;
-  background-position: 157px 0px;
+  background-size: 72.86em 6em;
+  background-position: 11.214em 0em;
 }
 .accuracy-token{
   background-image: url(/images/token_sprite_sheet.png);
-  background-size: 1020px 84px;
-  background-position: 0px 0px;
+  background-size: 72.86em 6em;
+  background-position: 0em 0em;
 
 }
 .negative-accuracy-token{
   background-image: url(/images/token_sprite_sheet.png);
-  background-size: 1020px 84px;
-  background-position: -78px 0px;
+  background-size: 72.86em 6em;
+  background-position: -5.7em 0em;
 
 }
 .evasion-token{
   background: url(/images/token_sprite_sheet.png);
-  background-size: 1020px 84px;
-  background-position: -157px 0px;
+  background-size: 72.86em 6em;
+  background-position: -11.214em 0em;
 }
 .negative-evasion-token{
   background: url(/images/token_sprite_sheet.png);
-  background-size: 1020px 84px;
-  background-position: -235px 0px;
+  background-size: 72.86em 6em;
+  background-position: -16.79em 0em;
 }
 .strength-token{
   background: url(/images/token_sprite_sheet.png);
-  background-size: 1020px 84px;
-  background-position: 235px 0px;
+  background-size: 72.86em 6em;
+  background-position: 16.79em 0em;
 }
 .negative-strength-token{
   background: url(/images/token_sprite_sheet.png);
-  background-size: 1020px 84px;
-  background-position: 157px 0px;
+  background-size: 72.86em 6em;
+  background-position: 11.214em 0em;
 }
 .luck-token{
   background: url(/images/token_sprite_sheet.png);
-  background-size: 1020px 84px;
-  background-position: -314px 0px;
+  background-size: 72.86em 6em;
+  background-position: -22.45em 0em;
 }
 .negative-luck-token{
   background: url(/images/token_sprite_sheet.png);
-  background-size: 1020px 84px;
-  background-position: -392px 0px;
+  background-size: 72.86em 6em;
+  background-position: -28.1em 0em;
 }
 .speed-token{
   background: url(/images/token_sprite_sheet.png);
-  background-size: 1020px 84px;
-  background-position: 392px 0px;
+  background-size: 72.86em 6em;
+  background-position: 28em 0em;
 }
 .negative-speed-token{
   background: url(/images/token_sprite_sheet.png);
-  background-size: 1020px 84px;
-  background-position: 314px 0px;
+  background-size: 72.86em 6em;
+  background-position: 22.4em 0em;
 }
 .movement-token{
   background: url(/images/token_sprite_sheet.png);
-  background-size: 1020px 84px;
-  background-position: -471px 0px;
+  background-size: 72.86em 6em;
+  background-position: -33.64em 0em;
 }
 .negative-movement-token{
   background: url(/images/token_sprite_sheet.png);
-  background-size: 1020px 84px;
-  background-position: 471px 0px;
+  background-size: 72.86em 6em;
+  background-position: 33.64em 0em;
 }
 
 .increment{
   position:relative;
   display: block;
-  width:78px;
-  height:28px;
+  width:5.71em;
+  height:2em;
   float:left;
   background-image: url(/images/increment-small.png);
   background-repeat:no-repeat;
@@ -276,15 +276,15 @@ div[name=main]{
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
-  background-size: 78px 28px;
+  background-size: 5.71em 2em;
 }
 .decrement{
-  background-size: 78px 28px;
+  background-size: 5.71em 2em;
   position:relative;
   display: block;
   float:left;
-  width:78px;
-  height:28px;
+  width:5.71em;
+  height:2em;
   background-image: url(/images/increment-small.png);
   background-repeat:no-repeat;
 }
@@ -293,7 +293,7 @@ div[name=main]{
   z-index: 1;
   display: block;
   float:right;
-  font-size:22px;
+  font-size:1.5em;
   margin-top:-5px;
   width:78px;
   height:22px;
@@ -301,16 +301,24 @@ div[name=main]{
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   vertical-align: middle;
 }
-.counter-container{
+
+
+
+
+.showdown-card-board{
   position: relative;
-  width:78px;
-  height:78px;
-  display: block;
-  padding-top:8px;
+  width:258mm;
+  float:left;
 }
-.counter-band{
+
+.counter-display{
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  display: block;
+  width:13em;
+  float:left;
   position: relative;
-  height:170px;
+  margin-top:2mm;
+  font-size:1.18em;
   background-image: -webkit-linear-gradient(#484e55, #3a3f44 60%, #313539);
   background-image: -o-linear-gradient(#484e55, #3a3f44 60%, #313539);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#484e55), color-stop(60%, #3a3f44), to(#313539));
@@ -318,34 +326,49 @@ div[name=main]{
   background-repeat: no-repeat;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff484e55', endColorstr='#ff313539', GradientType=0);
   -webkit-filter: none;
+}
+
+.counter-band{
+  position: relative;
+
   filter: none;
-  border: 1px solid rgba(0, 0, 0, 0.6);
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   text-align: center;
   display: inline-block;
+  padding-top:0.286em;
+  padding-bottom:0.286em;
+
+}
+
+
+.counter-container{
+  float:left;
+  display: inline-block;
+  width:5.7em;
+  display: block;
+  padding-top: 0.143em;
+  padding-left: 0.143em;
+}
+.token-container{
+  padding-left:12px;
+  padding-right:12px;
 }
 
 .token{
-  width:78px;
-  height:78px;
-  display: block;
+  width:5.57em;
+  height:5.57em;
+  display: inline-block;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-}
-.token-container{
-  position: relative;
-  width:102px;
-  height:160px;
-  display: block;
   float:left;
-  padding-left:12px;
-  padding-right:12px;
-  margin-top:4px;
-  margin-bottom:4px;
+  padding-left:1mm;
 }
 .token-container:not(:first-child){
   border-left:1px darkgray solid;
+}
+
+.counter{
+  padding-left:3px;
 }
 
 .increment:hover, .decrement:hover{
@@ -354,16 +377,16 @@ div[name=main]{
 }
 
 .card-deck, .game-card{
-  width:42mm;
-  height:66.75mm;
+  width:28mm;/*56*/
+  height:44.5mm;/*89*/
   -moz-border-radius: 2%;
   -webkit-border-radius: 2%;
   border-radius: 2%;
 }
 
 .deck{
-  width:44mm;
-  height:68.75mm;
+  width:30mm;/*56*/
+  height:46.5mm;/*89*/
   border: lightgrey 1mm solid;
   display: block;
   -moz-border-radius: 2%;
@@ -378,8 +401,8 @@ div[name=main]{
 }
 
 .card-area{
-  min-width:184mm;
-  height:68.75mm;
+  min-width:150mm;
+  height:46.5mm;/*89*/
   border: lightgrey 1mm solid;
   display: block;
   -moz-border-radius: 2%;
@@ -403,7 +426,7 @@ div[name=main]{
   height:100%;
 }
 .card-slot > div > div{
-  font-size:2.5em;
+  font-size:1.7em;
   text-align: center;
   vertical-align: middle;
   display:table-cell;
@@ -416,7 +439,7 @@ div[name=main]{
   height:100%;
 }
 .card-area > div > div{
-  font-size:2.5em;
+  font-size:1.7em;
   text-align: center;
   vertical-align: middle;
   display:table-cell;
@@ -424,8 +447,8 @@ div[name=main]{
 }
 
 .deck img{
-  width:42mm;
-  height:66.75mm;
+  width:28mm;/*56*/
+  height:44.5mm;/*89*/
   -moz-border-radius: 2%;
   -webkit-border-radius: 2%;
   border-radius: 2%;

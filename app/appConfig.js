@@ -34,15 +34,6 @@
 					}
 				})
 
-				.state('kingdom-death-ui.setup.monsterList', {
-					url: "/setup/monster-list",
-					views: {
-						"main": {
-							controller: 'monsterListController as view',
-							templateUrl: "setup/monsterList/monster-list.html"
-						},
-					}
-				})
 
 			.state('kingdom-death-ui.tokenTracker', {
 				url: "/token-tracker",
@@ -54,12 +45,22 @@
 				}
 			})
 
-			.state('kingdom-death-ui.aiDeck', {
-				url: "/ai-deck",
+			.state('kingdom-death-ui.showdown', {
+				url: "/showdown",
 				views: {
 					"main": {
-						controller: 'aiDeckController as view',
-						templateUrl: "aiDeck/ai-deck.html",
+						controller: 'showdownController as view',
+						templateUrl: "showdown/showdown.html",
+					},
+				}
+			})
+
+			.state('kingdom-death-ui.hunt', {
+				url: "/hunt",
+				views: {
+					"main": {
+						controller: 'huntController as view',
+						templateUrl: "hunt/hunt.html",
 					},
 				}
 			});
