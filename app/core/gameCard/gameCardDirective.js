@@ -23,7 +23,7 @@
 					this.deckName = deckName;
 					this.monster = monster;
 					monster.activeCard = monster[deckName].pullCardByIndex(deckIndex);
-					debugger;
+					$('.modal:visible').modal('hide');
 				}
 
 				function dropCardFromDeck(event) {
