@@ -16,8 +16,9 @@
 			monster.aiDeck.flush();
 			monster.starterDeck.flush();
 
-			for (var card in deckDefinition.required) {
-				monster.aiDeck.addCard(monsterCardLibrary.pullSpecificCard(card.monster, 'AI', card.aiLevel, card.name));
+			for (var cardIndex in deckDefinition.required) {
+				var card = deckDefinition.required[cardIndex];
+				monster.aiDeck.addCard(card);
 			}
 			for (var i = 0; i < deckDefinition.basic; i++) {
 				monster.aiDeck.addCard(monsterCardLibrary.pullRandomCard(monster.name, 'AI', 'basic'));

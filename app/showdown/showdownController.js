@@ -9,7 +9,7 @@
 	function showdownController(monster, aiDeckBuilder, hitLocationDeckBuilder, resourceDeckBuilder) {
 		var controller = this;
 		controller.monster = monster;
-		if (!controller.monster.name) {
+		if (false && !controller.monster.name) {
 			controller.monster.name = "White Lion";
 			controller.monster.level = "Level 3";
 			aiDeckBuilder.generateDeck(monster);

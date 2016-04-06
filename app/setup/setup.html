@@ -4,15 +4,16 @@
 		<p id="profile-name" class="profile-name-card"></p>
 		<form class="form-monster-selection">
 			<label class="formLabel">Monster</label>
-			<select name="monsterName" class="form-control" required autofocus ng-model="view.monster.name" ng-change="view.getMonsterLevels()">
+			<select name="monsterName" class="form-control" required autofocus ng-model="view.monsterName" ng-change="view.getMonsterLevels()">
 				<option></option>
 				<option ng-repeat="monsterName in view.monsterList" value="{{monsterName}}">{{monsterName}}</option>
 			</select>
 			<label class="formLabel">Level</label>
-			<select id="monsterLevel" class="form-control" required>
+			<select name="monsterlevel" class="form-control" required autofocus ng-model="view.monsterLevel" >
+			<option ng-repeat="level in view.levelList" value="{{level}}">{{level}}</option>
 			</select>
 			<BR>
-			<button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Load Monster</button>
+			<button ng-click="view.loadMonster()" class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Load Monster</button>
 		</form>
 	</div><!-- /card-container -->
 </div><!-- /container -->
