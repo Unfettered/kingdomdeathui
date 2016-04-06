@@ -198,7 +198,7 @@ div[name=main]{
 .negative-damage-token{
   background: url(/images/token_sprite_sheet.png);
   background-size: 72.86em 6em;
-  background-position: 11.214em 0em;
+  background-position: 11.14em 0em;
 }
 .accuracy-token{
   background-image: url(/images/token_sprite_sheet.png);
@@ -209,7 +209,7 @@ div[name=main]{
 .negative-accuracy-token{
   background-image: url(/images/token_sprite_sheet.png);
   background-size: 72.86em 6em;
-  background-position: -5.7em 0em;
+  background-position: -5.65em 0em;
 
 }
 .evasion-token{
@@ -220,7 +220,7 @@ div[name=main]{
 .negative-evasion-token{
   background: url(/images/token_sprite_sheet.png);
   background-size: 72.86em 6em;
-  background-position: -16.79em 0em;
+  background-position: -16.85em 0em;
 }
 .strength-token{
   background: url(/images/token_sprite_sheet.png);
@@ -230,7 +230,7 @@ div[name=main]{
 .negative-strength-token{
   background: url(/images/token_sprite_sheet.png);
   background-size: 72.86em 6em;
-  background-position: 11.214em 0em;
+  background-position: 11.14em 0em;
 }
 .luck-token{
   background: url(/images/token_sprite_sheet.png);
@@ -240,7 +240,7 @@ div[name=main]{
 .negative-luck-token{
   background: url(/images/token_sprite_sheet.png);
   background-size: 72.86em 6em;
-  background-position: -28.1em 0em;
+  background-position: -28.05em 0em;
 }
 .speed-token{
   background: url(/images/token_sprite_sheet.png);
@@ -250,7 +250,7 @@ div[name=main]{
 .negative-speed-token{
   background: url(/images/token_sprite_sheet.png);
   background-size: 72.86em 6em;
-  background-position: 22.4em 0em;
+  background-position: 22.35em 0em;
 }
 .movement-token{
   background: url(/images/token_sprite_sheet.png);
@@ -260,7 +260,7 @@ div[name=main]{
 .negative-movement-token{
   background: url(/images/token_sprite_sheet.png);
   background-size: 72.86em 6em;
-  background-position: 33.64em 0em;
+  background-position: 33.55em 0em;
 }
 
 .increment{

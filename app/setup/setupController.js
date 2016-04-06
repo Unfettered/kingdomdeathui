@@ -32,6 +32,12 @@
             aiDeckBuilder.generateDeck(monster);
             hitLocationDeckBuilder.generateDeck(monster);
             resourceDeckBuilder.generateDeck(monster);
+
+            var stats = monsterDefinition.getMonsterAttributeDefinition(controller.monsterName, controller.monsterLevel);
+
+            for (var statName in stats) {
+                monster[statName] =  stats[statName];
+            }
         }
 
         function getMonsterLevels() {

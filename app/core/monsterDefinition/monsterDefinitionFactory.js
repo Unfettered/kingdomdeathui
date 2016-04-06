@@ -254,6 +254,7 @@
 		factory.getMonsterAiDeckDefinition = getMonsterAiDeckDefinition;
 		factory.getMonsterHitLocationDeckDefinition =getMonsterHitLocationDeckDefinition;
 		factory.getMonsterResourceDeckDefinition = getMonsterResourceDeckDefinition;
+		factory.getMonsterAttributeDefinition = getMonsterAttributeDefinition;
 		function getDefinition(monsterName, level) {
 			return this.definitions[monsterName][level];
 		}
@@ -280,6 +281,10 @@
 
 		function getMonsterHitLocationDeckDefinition(monsterName, aiLevel) {
 			return this.definitions[monsterName][aiLevel].HitLocation;
+		}
+
+		function getMonsterAttributeDefinition(monsterName, aiLevel) {
+			return this.definitions[monsterName][aiLevel].attributes;
 		}
 
 		function getMonsterResourceDeckDefinition(monsterName){
