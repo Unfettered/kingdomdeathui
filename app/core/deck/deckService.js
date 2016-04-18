@@ -75,8 +75,8 @@
 				var card;
 				for (var i = 0; i < this.cards.length; i++) {
 					card = this.cards[i];
-					if (card.name = cardName) {
-						this.cards.splice(i);
+					if (card.name == cardName) {
+						this.cards.splice(i,1);
 					}
 				}
 				return card;

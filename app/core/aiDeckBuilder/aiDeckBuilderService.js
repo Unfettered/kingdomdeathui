@@ -20,6 +20,13 @@
 				var card = deckDefinition.required[cardIndex];
 				monster.aiDeck.addCard(card);
 			}
+			for (var cardIndex in deckDefinition.starter) {
+				card = deckDefinition.starter[cardIndex];
+				if (card.aiLevel != 'starter') {
+					card = monsterCardLibrary.pullSpecificCard(card.monster, card.type, card.aiLevel.toLowerCase(), card.name);
+				}
+				monster.starterDeck.addCard(card);
+			}
 			for (var i = 0; i < deckDefinition.basic; i++) {
 				monster.aiDeck.addCard(monsterCardLibrary.pullRandomCard(monster.name, 'AI', 'basic'));
 			}
@@ -28,10 +35,6 @@
 			}
 			for (var i = 0; i < deckDefinition.legendary; i++) {
 				monster.aiDeck.addCard(monsterCardLibrary.pullRandomCard(monster.name, 'AI', 'legendary'));
-			}
-			for (var cardIndex in deckDefinition.starter) {
-				card = deckDefinition.starter[cardIndex];
-				monster.starterDeck.addCard(card);
 			}
 		}
 	}
