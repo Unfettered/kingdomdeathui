@@ -275,6 +275,7 @@
 					aiDecks: {
 						starter: [
 							this.cardService.get('Trample', 'Screaming Antelope', 'AI', 'starter'),
+							this.cardService.get('Gobbled Up', 'Screaming Antelope', 'AI', 'starter'),
 						],
 						required: [],
 						basic: 7,
@@ -335,6 +336,7 @@
 						starter: [
 							this.cardService.get('Trample', 'Screaming Antelope', 'AI', 'starter'),
 							this.cardService.get('Diabolical', 'Screaming Antelope', 'AI', 'starter'),
+							this.cardService.get('Gobbled Up', 'Screaming Antelope', 'AI', 'starter'),
 						],
 						required: [],
 						basic: 10,
@@ -376,9 +378,9 @@
 						'B',
 						'O',
 						'S',
-						'M',/*2*/
+						'B',/*2*/
 						'S',
-						'B',/*3*/
+						'M',/*3*/
 						'B',
 						'B'
 					],
@@ -396,6 +398,7 @@
 							this.cardService.get('Trample', 'Screaming Antelope', 'AI', 'starter'),
 							this.cardService.get('Diabolical', 'Screaming Antelope', 'AI', 'starter'),
 							this.cardService.get('Hypermetabolism', 'Screaming Antelope', 'AI', 'starter'),
+							this.cardService.get('Gobbled Up', 'Screaming Antelope', 'AI', 'starter'),
 						],
 						required: [],
 						basic: 12,
@@ -427,7 +430,199 @@
 						this.cardService.get("Wailing Slide", 'Screaming Antelope', 'HitLocation'),
 					],
 				},
-			}
+			},
+			'Phoenix': {
+				'Level 1': {
+					huntSetup: [
+						'P',
+						'B',
+						'S',
+						'B',
+						'S',
+						'M',/*1*/
+						'O',
+						'S',
+						'B',/*2*/
+						'S',
+						'B',
+						'B',/*3*/
+						'B'
+					],
+					attributes: {
+						accuracy: 0,
+						damage: 0,
+						evasion: 0,
+						luck: 0,
+						movement: 0,
+						speed: 0,
+						Toughness: 0,
+					},
+					aiDecks: {
+						starter: [
+							this.cardService.get('Materialize', 'Phoenix', 'AI', 'starter'),
+							this.cardService.get('Spiral Age', 'Phoenix', 'AI', 'starter'),
+							this.cardService.get('Zeal', 'Phoenix', 'AI', 'starter'),
+							this.cardService.get('Dreaded Decade', 'Phoenix', 'AI', 'starter'),
+						],
+						required: [],
+						basic: 8,
+						advanced: 3,
+						legendary: 1
+					},
+					HitLocation: [
+						this.cardService.get("Feathered Back", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Feathered Body", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Feathered Breast", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Feathered Buttocks", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Feathered Neck", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Feathered Wing", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Arm Pit", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Crest", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Eye", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Handed Feet", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Hands", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Head", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Primary Eyes", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Soft Belly", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Wing Claws", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Wing Sphincter", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Hard Beak", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Inner Face", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Soft Lower Gut", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Tail Feathers", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Time Stop", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Tiny Wing Hands", 'Phoenix', 'HitLocation'),
+
+					],
+				},
+				'Level 2': {
+					huntSetup: [
+						'P',
+						'B',
+						'S',
+						'B',
+						'S',
+						'B',/*1*/
+						'O',
+						'S',
+						'M',/*2*/
+						'S',
+						'B',
+						'B',/*3*/
+						'B'
+					],
+					attributes: {
+						accuracy: 0,
+						damage: 0,
+						evasion: 0,
+						luck: 0,
+						movement: 0,
+						speed: 0,
+						Toughness: 0,
+					},
+					aiDecks: {
+						starter: [
+							this.cardService.get('Materialize', 'Phoenix', 'AI', 'starter'),
+							this.cardService.get('Spiral Age', 'Phoenix', 'AI', 'starter'),
+							this.cardService.get('Zeal', 'Phoenix', 'AI', 'starter'),
+							this.cardService.get('Dreaded Decade', 'Phoenix', 'AI', 'starter'),
+							this.cardService.get('Top of the Food Chain', 'Phoenix', 'AI', 'legendary'),
+						],
+						required: [],
+						basic: 10,
+						advanced: 6,
+						legendary: 1
+					},
+					HitLocation: [
+						this.cardService.get("Feathered Back", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Feathered Body", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Feathered Breast", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Feathered Buttocks", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Feathered Neck", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Feathered Wing", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Arm Pit", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Crest", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Eye", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Handed Feet", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Hands", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Head", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Primary Eyes", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Soft Belly", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Wing Claws", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Wing Sphincter", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Hard Beak", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Inner Face", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Soft Lower Gut", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Tail Feathers", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Time Stop", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Tiny Wing Hands", 'Phoenix', 'HitLocation'),
+					],
+				},
+				'Level 3': {
+					huntSetup: [
+						'P',
+						'B',
+						'S',
+						'B',
+						'S',
+						'B',/*1*/
+						'O',
+						'S',
+						'B',/*2*/
+						'S',
+						'B',
+						'M',/*3*/
+						'B'
+					],
+					attributes: {
+						accuracy: 0,
+						damage: 0,
+						evasion: 1,
+						luck: 1,
+						movement: 0,
+						speed: 0,
+						Toughness: 0,
+					},
+					aiDecks: {
+						starter: [
+							this.cardService.get('Materialize', 'Phoenix', 'AI', 'starter'),
+							this.cardService.get('Spiral Age', 'Phoenix', 'AI', 'starter'),
+							this.cardService.get('Zeal', 'Phoenix', 'AI', 'starter'),
+							this.cardService.get('Dreaded Decade', 'Phoenix', 'AI', 'starter'),
+							this.cardService.get('Top of the Food Chain', 'Phoenix', 'AI', 'legendary'),
+						],
+						required: [],
+						basic: 13,
+						advanced: 7,
+						legendary: 2
+					},
+					HitLocation: [
+						this.cardService.get("Feathered Back", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Feathered Body", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Feathered Breast", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Feathered Buttocks", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Feathered Neck", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Feathered Wing", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Arm Pit", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Crest", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Eye", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Handed Feet", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Hands", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Head", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Primary Eyes", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Soft Belly", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Wing Claws", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Glorious Wing Sphincter", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Hard Beak", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Inner Face", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Soft Lower Gut", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Tail Feathers", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Time Stop", 'Phoenix', 'HitLocation'),
+						this.cardService.get("Tiny Wing Hands", 'Phoenix', 'HitLocation'),
+					],
+				},
+
+			},
 		}
 
 		factory.getDefinition = getDefinition;
