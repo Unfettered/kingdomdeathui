@@ -245,6 +245,188 @@
 						this.cardService.get("Soft Belly", 'White Lion', 'HitLocation'),
 					],
 				}
+			},
+			'Screaming Antelope': {
+				'Level 1': {
+					huntSetup: [
+						'P',
+						'S',
+						'B',
+						'S',
+						'M',/*1*/
+						'B',
+						'O',
+						'S',
+						'B',/*2*/
+						'S',
+						'B',/*3*/
+						'B',
+						'B'
+					],
+					attributes: {
+						accuracy: 0,
+						damage: 0,
+						evasion: 0,
+						luck: 0,
+						movement: 0,
+						speed: 0,
+						Toughness: 0,
+					},
+					aiDecks: {
+						starter: [
+							this.cardService.get('Trample', 'Screaming Antelope', 'AI', 'starter'),
+						],
+						required: [],
+						basic: 7,
+						advanced: 3,
+						legendary: 0
+					},
+					HitLocation: [
+							this.cardService.get("Delicate Inverted Knee", 'Screaming Antelope', 'HitLocation'),
+							this.cardService.get("Ferocious Spasm", 'Screaming Antelope', 'HitLocation'),
+							this.cardService.get("Furry Tail", 'Screaming Antelope', 'HitLocation'),
+							this.cardService.get("Furry Throat", 'Screaming Antelope', 'HitLocation'),
+							this.cardService.get("Giant Mouth", 'Screaming Antelope', 'HitLocation'),
+							this.cardService.get("Giant Teeth", 'Screaming Antelope', 'HitLocation'),
+							this.cardService.get("Giant Tongue", 'Screaming Antelope', 'HitLocation'),
+							this.cardService.get("Gnarled Horns", 'Screaming Antelope', 'HitLocation'),
+							this.cardService.get("Palate", 'Screaming Antelope', 'HitLocation'),
+							this.cardService.get("Restless Back", 'Screaming Antelope', 'HitLocation'),
+							this.cardService.get("Restless Chest", 'Screaming Antelope', 'HitLocation'),
+							this.cardService.get("Restless Ear", 'Screaming Antelope', 'HitLocation'),
+							this.cardService.get("Restless Eye", 'Screaming Antelope', 'HitLocation'),
+							this.cardService.get("Restless Flank", 'Screaming Antelope', 'HitLocation'),
+							this.cardService.get("Restless Hoof", 'Screaming Antelope', 'HitLocation'),
+							this.cardService.get("Restless Inner Thigh", 'Screaming Antelope', 'HitLocation'),
+							this.cardService.get("Restless Muzzle", 'Screaming Antelope', 'HitLocation'),
+							this.cardService.get("Restless Rump", 'Screaming Antelope', 'HitLocation'),
+							this.cardService.get("Restless Shank", 'Screaming Antelope', 'HitLocation'),
+							this.cardService.get("Restless Shoulder", 'Screaming Antelope', 'HitLocation'),
+							this.cardService.get("Restless Tiny Hands", 'Screaming Antelope', 'HitLocation'),
+							this.cardService.get("Wailing Slide", 'Screaming Antelope', 'HitLocation'),
+					],
+				},
+				'Level 2': {
+					huntSetup: [
+						'P',
+						'S',
+						'B',
+						'S',
+						'B',/*1*/
+						'B',
+						'O',
+						'S',
+						'M',/*2*/
+						'S',
+						'B',/*3*/
+						'B',
+						'B'
+					],
+					attributes: {
+						accuracy: 0,
+						damage: 0,
+						evasion: 0,
+						luck: 0,
+						movement: 0,
+						speed: 0,
+						Toughness: 0,
+					},
+					aiDecks: {
+						starter: [
+							this.cardService.get('Trample', 'Screaming Antelope', 'AI', 'starter'),
+							this.cardService.get('Diabolical', 'Screaming Antelope', 'AI', 'starter'),
+						],
+						required: [],
+						basic: 10,
+						advanced: 5,
+						legendary: 0
+					},
+					HitLocation: [
+						this.cardService.get("Delicate Inverted Knee", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Ferocious Spasm", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Furry Tail", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Furry Throat", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Giant Mouth", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Giant Teeth", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Giant Tongue", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Gnarled Horns", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Palate", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Restless Back", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Restless Chest", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Restless Ear", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Restless Eye", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Restless Flank", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Restless Hoof", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Restless Inner Thigh", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Restless Muzzle", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Restless Rump", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Restless Shank", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Restless Shoulder", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Restless Tiny Hands", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Wailing Slide", 'Screaming Antelope', 'HitLocation'),
+					],
+				},
+				'Level 3': {
+					huntSetup: [
+						'P',
+						'S',
+						'B',
+						'S',
+						'B',/*1*/
+						'B',
+						'O',
+						'S',
+						'M',/*2*/
+						'S',
+						'B',/*3*/
+						'B',
+						'B'
+					],
+					attributes: {
+						accuracy: 0,
+						damage: 0,
+						evasion: 1,
+						luck: 0,
+						movement: 0,
+						speed: 0,
+						Toughness: 0,
+					},
+					aiDecks: {
+						starter: [
+							this.cardService.get('Trample', 'Screaming Antelope', 'AI', 'starter'),
+							this.cardService.get('Diabolical', 'Screaming Antelope', 'AI', 'starter'),
+							this.cardService.get('Hypermetabolism', 'Screaming Antelope', 'AI', 'starter'),
+						],
+						required: [],
+						basic: 12,
+						advanced: 8,
+						legendary: 2
+					},
+					HitLocation: [
+						this.cardService.get("Delicate Inverted Knee", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Ferocious Spasm", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Furry Tail", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Furry Throat", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Giant Mouth", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Giant Teeth", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Giant Tongue", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Gnarled Horns", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Palate", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Restless Back", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Restless Chest", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Restless Ear", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Restless Eye", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Restless Flank", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Restless Hoof", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Restless Inner Thigh", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Restless Muzzle", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Restless Rump", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Restless Shank", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Restless Shoulder", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Restless Tiny Hands", 'Screaming Antelope', 'HitLocation'),
+						this.cardService.get("Wailing Slide", 'Screaming Antelope', 'HitLocation'),
+					],
+				},
 			}
 		}
 
