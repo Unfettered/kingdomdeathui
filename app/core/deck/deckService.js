@@ -30,7 +30,19 @@
 			}
 
 			function shuffle() {
+				var currentIndex = this.cards.length, temporaryValue, randomIndex;
+				// While there remain elements to shuffle...
+				while (0 !== currentIndex) {
 
+					// Pick a remaining element...
+					randomIndex = Math.floor(Math.random() * currentIndex);
+					currentIndex -= 1;
+
+					// And swap it with the current element.
+					temporaryValue = this.cards[currentIndex];
+					this.cards[currentIndex] = this.cards[randomIndex];
+					this.cards[randomIndex] = temporaryValue;
+				}
 			}
 
 			function getDeckBackPath() {
@@ -77,9 +89,9 @@
 					card = this.cards[i];
 					if (card.name == cardName) {
 						this.cards.splice(i,1);
+						return card;
 					}
 				}
-				return card;
 			}
 
 			return newDeck;

@@ -41,7 +41,6 @@
 			}
 			var newCard = cardPool.pullSpecificCard(cardName);
 			drawnPool.addCard(newCard);
-
 			return newCard;
 		}
 
@@ -210,9 +209,6 @@
 					starter: [
 						"Diabolical",
 						"Gobbled Up",
-						"Gobbled Up",
-						"Gobbled Up",
-						"Gobbled Up",
 						"Hypermetabolism",
 						"Trample",
 					],
@@ -227,12 +223,12 @@
 						"Gore",
 						"Run Down",
 						"Slam",
-						"Stomp & Snort",
-						"Stomp & Snort",
+						"Stomp and Snort",
+						"Stomp and Snort",
 					],
 					advanced: [
 						"Buck",
-						"Crush & Devour",
+						"Crush and Devour",
 						"Great Kick",
 						"Infested",
 						"Lone Rampage",
@@ -293,10 +289,10 @@
 					"Pelt",
 					"Pelt",
 					"Screaming Brain",
-					"Shank Bones",
-					"Shank Bones",
-					"Shank Bones",
-					"Shank Bones",
+					"Shank Bone",
+					"Shank Bone",
+					"Shank Bone",
+					"Shank Bone",
 					"Spiral Horn",
 				],
 				drawn: {
@@ -337,14 +333,14 @@
 					advanced: [
 						"Analtorium",
 						"Excrete",
-						"Gouge & Feast",
+						"Gouge And Feast",
 						"Rancid Melon Stench",
 						"Ripple",
 						"The Difference Between Us",
 						"Unspoken",
 					],
 					legendary: [
-						"Déjà Vu",
+						"Deja Vu",
 						"Life Pattern",
 						"Predator's Aura",
 						"Top of the Food Chain",

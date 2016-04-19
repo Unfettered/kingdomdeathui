@@ -19,7 +19,7 @@
 				var card = deckDefinition[cardIndex];
 				monster.hitLocationDeck.addCard(card);
 			}
-
+			monster.hitLocationDeck.shuffle();
 		}
 	}
 

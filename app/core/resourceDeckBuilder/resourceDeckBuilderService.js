@@ -17,6 +17,7 @@
 				var card = deckDefinition.cards[cardIndex];
 				monster.resourceDeck.addCard(card);
 			}
+			monster.resourceDeck.shuffle();
 		}
 	}
 

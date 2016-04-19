@@ -36,6 +36,7 @@
 			for (var i = 0; i < deckDefinition.legendary; i++) {
 				monster.aiDeck.addCard(monsterCardLibrary.pullRandomCard(monster.name, 'AI', 'legendary'));
 			}
+			monster.aiDeck.shuffle();
 		}
 	}
 
