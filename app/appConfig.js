@@ -3,17 +3,15 @@
 
 	angular
 		.module('kingdom-death-ui')
-
 		.config(function ($stateProvider, $urlRouterProvider) {
 			// For any unmatched url, redirect to /login
-			$urlRouterProvider.otherwise("/login");
+			$urlRouterProvider.otherwise("/setup");
 			// Now set up the states
 			$stateProvider
 				.state('kingdom-death-ui', {
 					abstract: true,
 					templateUrl: "layout/layout.html"
 				})
-
 				.state('kingdom-death-ui.login', {
 					url: "/login",
 					views: {
@@ -33,37 +31,32 @@
 						},
 					}
 				})
-
-
-			.state('kingdom-death-ui.tokenTracker', {
-				url: "/token-tracker",
-				views: {
-					"main": {
-						controller: 'tokenTrackerController as view',
-						templateUrl: "tokenTracker/token-tracker.html",
-					},
-				}
-			})
-
-			.state('kingdom-death-ui.showdown', {
-				url: "/showdown",
-				views: {
-					"main": {
-						controller: 'showdownController as view',
-						templateUrl: "showdown/showdown.html",
-					},
-				}
-			})
-
-			.state('kingdom-death-ui.hunt', {
-				url: "/hunt",
-				views: {
-					"main": {
-						controller: 'huntController as view',
-						templateUrl: "hunt/hunt.html",
-					},
-				}
-			});
+				.state('kingdom-death-ui.tokenTracker', {
+					url: "/token-tracker",
+					views: {
+						"main": {
+							controller: 'tokenTrackerController as view',
+							templateUrl: "tokenTracker/token-tracker.html",
+						},
+					}
+				})
+				.state('kingdom-death-ui.showdown', {
+					url: "/showdown",
+					views: {
+						"main": {
+							controller: 'showdownController as view',
+							templateUrl: "showdown/showdown.html",
+						},
+					}
+				})
+				.state('kingdom-death-ui.hunt', {
+					url: "/hunt",
+					views: {
+						"main": {
+							controller: 'huntController as view',
+							templateUrl: "hunt/hunt.html",
+						},
+					}
+				});
 		});
-
 })();

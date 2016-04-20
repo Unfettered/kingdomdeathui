@@ -4,9 +4,12 @@
 	angular.module('kingdom-death-ui.showdown')
 		.controller('showdownController', showdownController);
 
-	showdownController.$inject = ['monster', 'aiDeckBuilder', 'hitLocationDeckBuilder', 'resourceDeckBuilder'];
+	showdownController.$inject = ['monster', 'aiDeckBuilder', 'hitLocationDeckBuilder', 'resourceDeckBuilder', '$state'];
 
-	function showdownController(monster, aiDeckBuilder, hitLocationDeckBuilder, resourceDeckBuilder) {
+	function showdownController(monster, aiDeckBuilder, hitLocationDeckBuilder, resourceDeckBuilder, $state) {
+		if (monster.name == "") {
+			$state.go('kingdom-death-ui.setup');
+		}
 		var controller = this;
 		controller.monster = monster;
 		if (false && !controller.monster.name) {

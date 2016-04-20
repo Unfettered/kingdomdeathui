@@ -453,8 +453,8 @@
 				HitLocation: [
 					"Armored Pig Shoulder",
 					"Butcher's Mask",
-					"Cleaver",
-					"Cleaver",
+					"Cleaver L",
+					"Cleaver R",
 					"Furious Bellow",
 					"Furious Breastplate",
 					"Furious Crown",
