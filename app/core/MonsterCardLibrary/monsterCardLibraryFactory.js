@@ -483,7 +483,7 @@
 					Resource: []
 				}
 			},
-			'Kings Man': {
+			'Kingsmen': {
 				AI: {
 					starter: [
 						"Battle Tempo",
@@ -501,8 +501,8 @@
 						"Coup de Grace",
 						"Force Thrust",
 						"Hammer",
-						"Hook & Pull",
-						"Hook & Pull",
+						"Hook and Pull",
+						"Hook and Pull",
 						"Kings Grace",
 						"Spear",
 						"Spear",
@@ -522,7 +522,7 @@
 					],
 				},
 				HitLocation: [
-					"Acid Shot Discharge",
+					"Acid Blood Discharge",
 					"Axe Blade",
 					"Battle Pressure",
 					"Battle Pressure",
@@ -564,12 +564,16 @@
 				AI: {
 					starter: [
 						"Applause",
-						"Blue Lens Open / Closed",
+						"Blue Lens - Open",
+						"Blue Lens - Closed",
 						"Ghost Step",
-						"Green Lens Open / Closed",
-						"Impossible Eyes / Respect",
+						"Green Lens - Open",
+						"Green Lens - Closed",
+						"Red Lens - Open",
+						"Red Lens - Closed",
+						"Impossible Eyes",
+						"Respect",
 						"Polarized Aura",
-						"Red Lens Open/ Closed",
 					],
 					basic: [
 						"Bullet Jabs",
@@ -639,9 +643,10 @@
 						"Biophoton Feast",
 						"Exhale",
 						"Harrow",
+						"Harrow",
 						"Inhale",
 						"Liquefy",
-						"Mortify",
+						//"Mortify",
 						"Petrify",
 						"Purify",
 						"Stupefy",
@@ -650,9 +655,6 @@
 						"Vomit Lanterns",
 					],
 					advanced: [
-						"Hack City",
-						"Lantern Frenzy",
-						"Lantern Hunger",
 					],
 					legendary: [
 					],
@@ -660,7 +662,7 @@
 				HitLocation: [
 					"Black Out",
 					"Blackened Lanterns",
-					"Hydrostatic Fluid",
+					"Hydrostatic Fluids",
 					"Hydrostatic Skeleton",
 					"Inner Robes",
 					"Outer Robes",
@@ -681,7 +683,7 @@
 					"Void Polyps",
 					"Void Shroud",
 					"Void Tentacles",
-					"Void Toxins",
+					"Void Toxin",
 					"White Out",
 				],
 				Hunt: [

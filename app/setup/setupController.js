@@ -38,6 +38,7 @@
             for (var statName in stats) {
                 monster[statName] =  stats[statName];
             }
+            monster.life = monsterDefinition.getMonsterLife(controller.monsterName, controller.monsterLevel);
         }
 
         function getMonsterLevels() {

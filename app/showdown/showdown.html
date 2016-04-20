@@ -1,4 +1,4 @@
-<div  class='showdown-card-board'>
+<div class='showdown-card-board'>
 	<div class='hit-location-region'>
 		<div class='deck card-slot '>
 			<div>
@@ -13,7 +13,7 @@
 			</div>
 		</div>
 		<div default-value='Starter Cards' card-facing='front' deck-name='starterDeck'
-			 class='card-area card-area-renderer'>
+			 class='card-area card-receptacle card-area-renderer'>
 			<div>
 				<div></div>
 			</div>
@@ -32,12 +32,24 @@
 				<div></div>
 			</div>
 		</div>
-		<div default-value='Wound<BR>Deck' card-facing='back' deck-name='woundDeck'
+		<div ng-if="view.monster.life == null" default-value='Wound<BR>Deck' card-facing='back' deck-name='woundDeck'
 			 class='deck card-receptacle card-slot ai-deck deck-renderer card-deck'>
 			<div>
 				<div></div>
 			</div>
 		</div>
+
+		<div ng-if="view.monster.life != null" class='deck card-slot life-pool'>
+			<div>
+				<div>
+					<img src="/images/Life Trait.png" class="light-box">
+						<div  ng-click="view.increment('life',1)" class='increment'></div>
+						<div class='life-total'>{{(view.monster.life < 10) ? '0'+view.monster.life : view.monster.life}}</div>
+						<div ng-click="view.increment('life',-1)" class='decrement'></div>
+				</div>
+			</div>
+		</div>
+
 	</div>
 
 
@@ -105,25 +117,26 @@
 <div class='counter-display'>
 
 	<div class='counter-band' ng-repeat="attribute in view.attributes">
-		<div data-toggle="tooltip" title="{{ attribute.capitalize(); }}" stat="{{attribute}}" class='token-container toggle-token-class'>
+		<div data-toggle="tooltip" title="{{ attribute.capitalize(); }}" stat="{{attribute}}"
+			 class='token-container toggle-token-class'>
 			<div class='token {{attribute}}-token'></div>
 			<div class='counter-container'>
-				<div  ng-click="view.increment(attribute,1)" class='increment'></div>
+				<div ng-click="view.increment(attribute,1)" class='increment'></div>
 				<div class='counter'>{{ view.monster[attribute] }}</div>
 				<div ng-click="view.increment(attribute,-1)" class='decrement'></div>
 			</div>
 		</div>
 	</div>
-<!--
-	<div id="modals">
-		<div class="modal fade" id="archiveDeckModal" tabindex="-1" role="dialog" aria-labelledby="Archived Cards"></div>
-		<div class="modal fade" id="woundDeckModal" tabindex="-1" role="dialog" aria-labelledby="Wounds"></div>
-		<div class="modal fade" id="aiDeckModal" tabindex="-1" role="dialog" aria-labelledby="AI Deck"></div>
-		<div class="modal fade" id="discardDeckModal" tabindex="-1" role="dialog" aria-labelledby="AI Discard"></div>
-		<div class="modal fade" id="resourceDeckModal" tabindex="-1" role="dialog" aria-labelledby="Resource Deck"></div>
-		<div class="modal fade" id="hitLocationDeckModal" tabindex="-1" role="dialog" aria-labelledby="Hit Location Deck"></div>
-		<div class="modal fade" id="hitLocationDiscardDeckModal" tabindex="-1" role="dialog" aria-labelledby="Hit Location Discard"></div>
-		<div class="modal fade" id="drawnResourceDeck" tabindex="-1" role="dialog" aria-labelledby="Drawn Resources"></div>
-	</div>
--->
+	<!--
+		<div id="modals">
+			<div class="modal fade" id="archiveDeckModal" tabindex="-1" role="dialog" aria-labelledby="Archived Cards"></div>
+			<div class="modal fade" id="woundDeckModal" tabindex="-1" role="dialog" aria-labelledby="Wounds"></div>
+			<div class="modal fade" id="aiDeckModal" tabindex="-1" role="dialog" aria-labelledby="AI Deck"></div>
+			<div class="modal fade" id="discardDeckModal" tabindex="-1" role="dialog" aria-labelledby="AI Discard"></div>
+			<div class="modal fade" id="resourceDeckModal" tabindex="-1" role="dialog" aria-labelledby="Resource Deck"></div>
+			<div class="modal fade" id="hitLocationDeckModal" tabindex="-1" role="dialog" aria-labelledby="Hit Location Deck"></div>
+			<div class="modal fade" id="hitLocationDiscardDeckModal" tabindex="-1" role="dialog" aria-labelledby="Hit Location Discard"></div>
+			<div class="modal fade" id="drawnResourceDeck" tabindex="-1" role="dialog" aria-labelledby="Drawn Resources"></div>
+		</div>
+	-->
 </div>

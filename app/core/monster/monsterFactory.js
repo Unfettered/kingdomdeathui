@@ -17,6 +17,7 @@
             movement: 0,
             speed: 0,
             toughness: 0,
+            life: null,
             hitLocationDeck: deck.get('HitLocation'),
             hitLocationDiscardDeck: deck.get('HitLocation'),
             persistentInjuryDeck: deck.get('HitLocation'),
