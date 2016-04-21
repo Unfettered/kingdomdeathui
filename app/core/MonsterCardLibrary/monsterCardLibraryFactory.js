@@ -445,6 +445,13 @@
 						"Wild Carve",
 					],
 					advanced: [
+						"Bite",
+						"Bite",
+						"Devour Lantern",
+						"Double Hack",
+						"Embrace the Pain",
+						"Forbidden Light",
+						"Gaze of Truth",
 						"Hack City",
 						"Lantern Frenzy",
 						"Lantern Hunger",

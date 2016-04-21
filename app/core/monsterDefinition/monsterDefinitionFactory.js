@@ -1099,6 +1099,145 @@
 					},
 				},
 			},
+			'Butcher': {
+				'Level 1': {
+					huntSetup: null,
+					attributes: {
+						accuracy: 0,
+						damage: 0,
+						evasion: 0,
+						luck: 0,
+						movement: 0,
+						speed: 0,
+						toughness: 0,
+					},
+					aiDecks: {
+						starter: [
+							this.cardService.get('Butcher', 'Butcher', 'AI', 'starter'),
+							this.cardService.get('Butcher Back', 'Butcher', 'AI', 'starter'),
+							this.cardService.get('Berserker', 'Butcher', 'AI', 'starter'),
+							this.cardService.get('Dreaded Trophies', 'Butcher', 'AI', 'starter'),
+							this.cardService.get('Fast Target', 'Butcher', 'AI', 'starter'),
+							this.cardService.get('Infectious Lunacy', 'Butcher', 'AI', 'starter'),
+						],
+						required: [],
+						basic: 7,
+						advanced: 5,
+						legendary: 0
+					},
+					HitLocation: {
+						cards: [
+							this.cardService.get("Armored Pig Shoulder", 'Butcher', 'HitLocation'),
+							this.cardService.get("Butcher's Mask", 'Butcher', 'HitLocation'),
+							this.cardService.get("Cleaver L", 'Butcher', 'HitLocation'),
+							this.cardService.get("Cleaver R", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Bellow", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Breastplate", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Crown", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Gauntlet", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Greaves", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Gut", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Scrag", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Shoulder", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Vambraces", 'Butcher', 'HitLocation'),
+							this.cardService.get("Overpower", 'Butcher', 'HitLocation'),
+							this.cardService.get("Thick Cape", 'Butcher', 'HitLocation'),
+						]
+					},
+				},
+				'Level 2': {
+					huntSetup: null,
+					attributes: {
+						accuracy: 0,
+						damage: 0,
+						evasion: 0,
+						luck: 0,
+						movement: 0,
+						speed: 0,
+						toughness: 0,
+					},
+					aiDecks: {
+						starter: [
+							this.cardService.get('Butcher', 'Butcher', 'AI', 'starter'),
+							this.cardService.get('Butcher Back', 'Butcher', 'AI', 'starter'),
+							this.cardService.get('Frenzied Berserker', 'Butcher', 'AI', 'starter'),
+							this.cardService.get('Dreaded Trophies', 'Butcher', 'AI', 'starter'),
+							this.cardService.get('Fast Target', 'Butcher', 'AI', 'starter'),
+							this.cardService.get('Infectious Lunacy', 'Butcher', 'AI', 'starter'),
+						],
+						required: [],
+						basic: 10,
+						advanced: 5,
+						legendary: 0
+					},
+					HitLocation: {
+						cards: [
+							this.cardService.get("Armored Pig Shoulder", 'Butcher', 'HitLocation'),
+							this.cardService.get("Butcher's Mask", 'Butcher', 'HitLocation'),
+							this.cardService.get("Cleaver L", 'Butcher', 'HitLocation'),
+							this.cardService.get("Cleaver R", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Bellow", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Breastplate", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Crown", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Gauntlet", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Greaves", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Gut", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Scrag", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Shoulder", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Vambraces", 'Butcher', 'HitLocation'),
+							this.cardService.get("Overpower", 'Butcher', 'HitLocation'),
+							this.cardService.get("Thick Cape", 'Butcher', 'HitLocation'),
+						]
+					},
+				},
+				'Level 3': {
+					huntSetup: null,
+					attributes: {
+						accuracy: 2,
+						damage: 0,
+						evasion: 0,
+						luck: 0,
+						movement: 0,
+						speed: 0,
+						toughness: 0,
+					},
+					aiDecks: {
+						starter: [
+							this.cardService.get('Butcher', 'Butcher', 'AI', 'starter'),
+							this.cardService.get('Butcher Back', 'Butcher', 'AI', 'starter'),
+							this.cardService.get('Dreaded Trophies', 'Butcher', 'AI', 'starter'),
+							this.cardService.get('Fast Target', 'Butcher', 'AI', 'starter'),
+							this.cardService.get('Frenzied Berserker', 'Butcher', 'AI', 'starter'),
+							this.cardService.get('Infectious Lunacy', 'Butcher', 'AI', 'starter'),
+							this.cardService.get('Invincible', 'Butcher', 'AI', 'starter'),
+						],
+						required: [],
+						basic: 11,
+						advanced: 10,
+						legendary: 0
+					},
+					HitLocation: {
+						cards: [
+							this.cardService.get("Armored Pig Shoulder", 'Butcher', 'HitLocation'),
+							this.cardService.get("Butcher's Mask", 'Butcher', 'HitLocation'),
+							this.cardService.get("Cleaver L", 'Butcher', 'HitLocation'),
+							this.cardService.get("Cleaver R", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Bellow", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Breastplate", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Crown", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Gauntlet", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Greaves", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Gut", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Scrag", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Shoulder", 'Butcher', 'HitLocation'),
+							this.cardService.get("Furious Vambraces", 'Butcher', 'HitLocation'),
+							this.cardService.get("Overpower", 'Butcher', 'HitLocation'),
+							this.cardService.get("Thick Cape", 'Butcher', 'HitLocation'),
+						]
+					},
+				},
+			},
+
 		}
 
 		factory.getDefinition = getDefinition;
