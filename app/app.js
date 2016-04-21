@@ -21,6 +21,7 @@
 		'core.deckRenderer',
 		'core.cardDeck',
 		'core.lightBox',
+		'core.shuffler',
 		'core.cardAreaRenderer',
 		'core.gameCard',
 		'core.cardReceptacle',

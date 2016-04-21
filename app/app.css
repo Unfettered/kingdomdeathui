@@ -493,3 +493,17 @@ div[name=main]{
   margin-top:-2em;
   opacity: 1;
 }
+.shuffler{
+  z-index: 5;
+  position:absolute;
+  height: 27px;
+  width: 27px;
+  margin-left:-30px;
+  margin-top:3px;
+  background-image: url(/images/shuffle.png);
+  background-size: 27px 27px;
+  opacity: 0.3;
+}
+.shuffler:hover{
+  opacity: 1;
+}
