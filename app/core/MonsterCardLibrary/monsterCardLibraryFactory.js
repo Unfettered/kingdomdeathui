@@ -107,6 +107,8 @@
 						"Merciless",
 						"White Lion",
 						"White Lion Back",
+						'Beast of Sorrow Back',
+						'Great Golden Cat Back',
 					],
 					basic: [
 						"Bat Around",
