@@ -15,11 +15,14 @@
 
 			monster.hitLocationDeck.flush();
 
-			for (var cardIndex in deckDefinition) {
-				var card = deckDefinition[cardIndex];
+			for (var cardIndex in deckDefinition.cards) {
+				var card = deckDefinition.cards[cardIndex];
 				monster.hitLocationDeck.addCard(card);
 			}
 			monster.hitLocationDeck.shuffle();
+			if (deckDefinition.hasOwnProperty("hitLocationDeckCallback")) {
+				monster.hitLocationDeck = deckDefinition.hitLocationDeckCallback(monster.hitLocationDeck);
+			}
 		}
 	}
 

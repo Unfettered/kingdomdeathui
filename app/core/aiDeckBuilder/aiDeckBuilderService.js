@@ -27,6 +27,17 @@
 				}
 				monster.starterDeck.addCard(card);
 			}
+
+			if (deckDefinition.hasOwnProperty("archive")) {
+				for (var cardIndex in deckDefinition.archive) {
+					card = deckDefinition.archive[cardIndex];
+					if (card.aiLevel != 'starter') {
+						card = monsterCardLibrary.pullSpecificCard(card.monster, card.type, card.aiLevel.toLowerCase(), card.name);
+					}
+					monster.archiveDeck.addCard(card);
+				}
+			}
+
 			for (var i = 0; i < deckDefinition.basic; i++) {
 				monster.aiDeck.addCard(monsterCardLibrary.pullRandomCard(monster.name, 'AI', 'basic'));
 			}
@@ -37,6 +48,9 @@
 				monster.aiDeck.addCard(monsterCardLibrary.pullRandomCard(monster.name, 'AI', 'legendary'));
 			}
 			monster.aiDeck.shuffle();
+			if (deckDefinition.hasOwnProperty("aiDeckCallBack")) {
+				monster.aiDeck = deckDefinition.aiDeckCallBack(monster.aiDeck);
+			}
 		}
 	}
 

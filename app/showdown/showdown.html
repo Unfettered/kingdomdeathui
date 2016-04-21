@@ -1,18 +1,6 @@
 <div class='showdown-card-board'>
 	<div class='hit-location-region'>
-		<div class='deck card-slot '>
-			<div>
-				<div>
-					<img src="{{view.monster.getMonsterCardFrontPath()}}" class="light-box">
-				</div>
-			</div>
-		</div>
-		<div class='deck card-slot'>
-			<div>
-				<div><img src="{{view.monster.getMonsterCardBackPath()}}" class="light-box"></div>
-			</div>
-		</div>
-		<div default-value='Starter Cards' card-facing='front' deck-name='starterDeck'
+		<div  style='width:218mm' default-value='Starter Cards' card-facing='front' deck-name='starterDeck'
 			 class='card-area card-receptacle card-area-renderer'>
 			<div>
 				<div></div>
@@ -21,7 +9,10 @@
 		<div default-value='Archived<BR>Cards' card-facing='front' deck-name='archiveDeck'
 			 class='deck card-receptacle card-slot ai-deck deck-renderer card-deck'>
 			<div>
-				<div></div>
+				<div>
+					<img src="{{view.monster.getMonsterCardFrontPath()}}" class="light-box">
+					<img src="{{view.monster.getMonsterCardBackPath()}}" class="light-box">
+				</div>
 			</div>
 		</div>
 	</div>

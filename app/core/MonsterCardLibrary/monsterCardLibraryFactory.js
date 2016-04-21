@@ -105,6 +105,8 @@
 					starter: [
 						"Cunning",
 						"Merciless",
+						"White Lion",
+						"White Lion Back",
 					],
 					basic: [
 						"Bat Around",
