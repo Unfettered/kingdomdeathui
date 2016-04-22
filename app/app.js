@@ -26,6 +26,7 @@
 		'core.gameCard',
 		'core.cardReceptacle',
 		'core.hitLocationDeckBuilder',
+		'core.huntDeckBuilder',
 		'core.resourceDeckBuilder',
 		'ui.router',
 		'ui.bootstrap',

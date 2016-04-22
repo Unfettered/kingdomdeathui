@@ -4,9 +4,9 @@
     angular.module('kingdom-death-ui.setup')
         .controller('setupController', setupController);
 
-    setupController.$inject = ['monster', 'aiDeckBuilder', 'hitLocationDeckBuilder', 'resourceDeckBuilder', 'monsterCardLibrary', 'monsterDefinition'];
+    setupController.$inject = ['monster', 'aiDeckBuilder', 'hitLocationDeckBuilder', 'resourceDeckBuilder', 'monsterCardLibrary', 'monsterDefinition', 'huntDeckBuilder'];
 
-    function setupController(monster, aiDeckBuilder, hitLocationDeckBuilder, resourceDeckBuilder, monsterCardLibrary, monsterDefinition) {
+    function setupController(monster, aiDeckBuilder, hitLocationDeckBuilder, resourceDeckBuilder, monsterCardLibrary, monsterDefinition, huntDeckBuilder) {
         var controller = this;
         controller.monster = monster;
         controller.monsterDefinition = monsterDefinition;
@@ -32,6 +32,8 @@
             aiDeckBuilder.generateDeck(monster);
             hitLocationDeckBuilder.generateDeck(monster);
             resourceDeckBuilder.generateDeck(monster);
+            huntDeckBuilder.generateDeck(monster);
+
 
             var stats = monsterDefinition.getMonsterAttributeDefinition(controller.monsterName, controller.monsterLevel);
 

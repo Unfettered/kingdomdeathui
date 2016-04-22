@@ -17,10 +17,13 @@
             movement: 0,
             speed: 0,
             toughness: 0,
+            huntStart:0,
             life: null,
             hitLocationDeck: deck.get('HitLocation'),
             hitLocationDiscardDeck: deck.get('HitLocation'),
             persistentInjuryDeck: deck.get('HitLocation'),
+
+            huntDeck: deck.get('Hunt'),
 
             aiDeck: deck.get('AI'),
             aiDiscardDeck: deck.get('AI'),
@@ -57,10 +60,13 @@
             this.movement = 0;
             this.speed = 0;
             this.toughness = 0;
-
+            this.life =  null;
+            this.huntStart = 0;
             this.hitLocationDeck = deck.get('HitLocation');
             this.hitLocationDiscardDeck = deck.get('HitLocation');
             this.persistentInjuryDeck = deck.get('HitLocation');
+
+            this.huntDeck = deck.get('Hunt');
 
             this.aiDeck = deck.get('AI');
             this.aiDiscardDeck = deck.get('AI');

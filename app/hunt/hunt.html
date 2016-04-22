@@ -1,8 +1,15 @@
-<div ng-if="view.huntSetup == null" style='font-size:8em;color:crimson; text-align: center'>
+<div ng-if="view.monster.huntDeck.cards.length == 0" style='font-size:8em;color:crimson; text-align: center'>
 	This monster hunts you...
 	<br>
 	Proceed to the showdown phase.
 </div>
-<div ng-if="view.huntSetup != null">
-	HUNT IT!
+<div ng-if="view.monster.huntDeck.cards.length > 0">
+	<div class='hunt-phase'>
+		<div default-value='Hunt<BR>Deck' card-facing='back' deck-name='huntDeck'
+			 class='deck card-receptacle card-slot hunt-deck deck-renderer card-deck'>
+			<div>
+				<div>Hunt<BR>Deck</div>
+			</div>
+		</div>
+	</div>
 </div>

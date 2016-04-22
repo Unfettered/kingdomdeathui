@@ -1594,7 +1594,6 @@
 		}
 
 		function getHuntSetup(monsterName, aiLevel) {
-			debugger;
 			return this.definitions[monsterName][aiLevel].huntSetup;
 		}
 

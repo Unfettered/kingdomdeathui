@@ -100,6 +100,41 @@
 
 		factory.library = {};
 		factory.libraryDefinition = {
+			'Basic':{
+				Hunt: [
+					"Random Event",
+					"Random Event",
+					"Random Event",
+					"Random Event",
+					"Random Event",
+					"Random Event",
+					"Random Event",
+					"Random Event",
+				],
+				Resource: [
+					"???",
+					"???",
+					"Broken Lantern",
+					"Broken Lantern",
+					"Love Juice",
+					"Love Juice",
+					"Monster Bone",
+					"Monster Bone",
+					"Monster Bone",
+					"Monster Bone",
+					"Monster Hide",
+					"Monster Hide",
+					"Monster Hide",
+					"Monster Hide",
+					"Monster Hide",
+					"Monster Hide",
+					"Monster Hide",
+					"Monster Organ",
+					"Monster Organ",
+					"Monster Organ",
+					"Skull",
+				],
+			},
 			'White Lion': {
 				AI: {
 					starter: [

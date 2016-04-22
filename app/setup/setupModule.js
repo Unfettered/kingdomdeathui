@@ -6,7 +6,8 @@
 		'core.hitLocationDeckBuilder',
 		'core.resourceDeckBuilder',
 		'core.monsterCardLibrary',
-		'core.monsterDefinition'
+		'core.monsterDefinition',
+		'core.huntDeckBuilder'
 	]);
 
 })();
