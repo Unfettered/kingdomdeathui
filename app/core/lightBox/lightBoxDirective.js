@@ -13,7 +13,6 @@
 			}
 		};
 		function showCard(){
-
 			var modalHtml =
 				'<div class="modal fade" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">' +
 					'<div class="modal-dialog" role="document">' +

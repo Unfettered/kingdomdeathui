@@ -4,6 +4,7 @@
 	Proceed to the showdown phase.
 </div>
 <div ng-if="view.monster.huntDeck.cards.length > 0">
+	<!--
 	<div class='hunt-phase'>
 		<div default-value='Hunt<BR>Deck' card-facing='back' deck-name='huntDeck'
 			 class='deck card-receptacle card-slot hunt-deck deck-renderer card-deck'>
@@ -12,4 +13,36 @@
 			</div>
 		</div>
 	</div>
+	-->
+
+
+	<div class='hunt-region-one hunt-region'>
+		<div class='deck card-slot ' ng-repeat="index in [0,1,2,3,4,5]">
+			<div>
+				<div>
+					<img facing="front" deck-index="{{index}}"
+						 src="{{view.monster.huntDeck.cards[index].getCardFrontPath()}}"
+						 class="light-box ng-scope" deck-name="huntDeck">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class='overwhelming-darkness hunt-region'>
+		<img style="width:155mm;padding-top:2mm;padding-bottom:2mm; margin-left:27mm;margin-right:27mm;" facing="front"  src="/images/OverwhelmingDarkness.png"	 class="light-box" light-box-width="1100">
+	</div>
+
+
+	<div class='hunt-region-two hunt-region'>
+		<div class='deck card-slot ' ng-repeat="index in [6,7,8,9,10,11]">
+			<div>
+				<div>
+					<img facing="front" deck-index="{{index}}"
+						 src="{{view.monster.huntDeck.cards[index].getCardFrontPath()}}" class="light-box ng-scope"
+						 deck-name="huntDeck">
+				</div>
+			</div>
+		</div>
+	</div>
+
 </div>
