@@ -1,1 +1,8 @@
-<p>This is the partial for HUNT.</p>
+<div ng-if="view.huntSetup == null" style='font-size:8em;color:crimson; text-align: center'>
+	This monster hunts you...
+	<br>
+	Proceed to the showdown phase.
+</div>
+<div ng-if="view.huntSetup != null">
+	HUNT IT!
+</div>

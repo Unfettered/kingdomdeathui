@@ -85,19 +85,19 @@
 				},
 				'Level 1': {
 					huntSetup: [
-						'P',
-						'S',
-						'S',
-						'B',
-						'M',
-						'B',
-						'O',
-						'B',
-						'S',
-						'S',
-						'B',
-						'B',
-						'B'
+						'Player Start',
+						'Monster Hunt Event',
+						'Monster Hunt Event',
+						'Basic Hunt Event',
+						'Monster Start',
+						'Basic Hunt Event',
+						'Overwhelming Darkness',
+						'Basic Hunt Event',
+						'Monster Hunt Event',
+						'Monster Hunt Event',
+						'Basic Hunt Event',
+						'Basic Hunt Event',
+						'Basic Hunt Event'
 					],
 					attributes: {
 						accuracy: 0,
@@ -149,19 +149,19 @@
 				},
 				'Level 2': {
 					huntSetup: [
-						'P',
-						'S',
-						'S',
-						'B',
-						'B',
-						'B',
-						'O',
-						'M',
-						'S',
-						'S',
-						'B',
-						'B',
-						'B'
+						'Player Start',
+						'Monster Hunt Event',
+						'Monster Hunt Event',
+						'Basic Hunt Event',
+						'Basic Hunt Event',
+						'Basic Hunt Event',
+						'Overwhelming Darkness',
+						'Monster Start',
+						'Monster Hunt Event',
+						'Monster Hunt Event',
+						'Basic Hunt Event',
+						'Basic Hunt Event',
+						'Basic Hunt Event'
 					],
 					attributes: {
 						accuracy: 0,
@@ -214,19 +214,19 @@
 				},
 				'Level 3': {
 					huntSetup: [
-						'P',
-						'S',
-						'S',
-						'B',
-						'B',
-						'B',
-						'O',
-						'B',
-						'S',
-						'S',
-						'B',
-						'B',
-						'M'
+						'Player Start',
+						'Monster Hunt Event',
+						'Monster Hunt Event',
+						'Basic Hunt Event',
+						'Basic Hunt Event',
+						'Basic Hunt Event',
+						'Overwhelming Darkness',
+						'Basic Hunt Event',
+						'Monster Hunt Event',
+						'Monster Hunt Event',
+						'Basic Hunt Event',
+						'Basic Hunt Event',
+						'Monster Start'
 					],
 					attributes: {
 						accuracy: 2,
@@ -277,19 +277,19 @@
 				},
 				'Beast of Sorrow': {
 					huntSetup: [
-						'P',
-						'S',
-						'S',
-						'B',
-						'B',
-						'B',
-						'O',
-						'B',
-						'S',
-						'S',
-						'B',
-						'B',
-						'M'
+						'Player Start',
+						'Monster Hunt Event',
+						'Monster Hunt Event',
+						'Basic Hunt Event',
+						'Basic Hunt Event',
+						'Basic Hunt Event',
+						'Overwhelming Darkness',
+						'Basic Hunt Event',
+						'Monster Hunt Event',
+						'Monster Hunt Event',
+						'Basic Hunt Event',
+						'Basic Hunt Event',
+						'Monster Start'
 					],
 					attributes: {
 						accuracy: 0,
@@ -344,21 +344,21 @@
 				},
 				'Great Golden Cat': {
 					huntSetup: [
-						'P',
-						'S',
-						'S',
-						'B',
-						'B',
-						'B',
-						'O',
-						'B',
-						'S',
-						'S',
-						'B',
-						'B',
-						'M'
+						'Player Start',
+						'Monster Hunt Event',
+						'Monster Hunt Event',
+						'Basic Hunt Event',
+						'Basic Hunt Event',
+						'Basic Hunt Event',
+						'Overwhelming Darkness',
+						'Basic Hunt Event',
+						'Monster Hunt Event',
+						'Monster Hunt Event',
+						'Basic Hunt Event',
+						'Basic Hunt Event',
+						'Monster Start'
 					],
-					life:15,
+					life: 15,
 					attributes: {
 						accuracy: 1,
 						damage: 0,
@@ -420,19 +420,19 @@
 			'Screaming Antelope': {
 				'Level 1': {
 					huntSetup: [
-						'P',
-						'S',
-						'B',
-						'S',
-						'M', /*1*/
-						'B',
-						'O',
-						'S',
-						'B', /*2*/
-						'S',
-						'B', /*3*/
-						'B',
-						'B'
+						'Player Start',
+						'Monster Hunt Event',
+						'Basic Hunt Event',
+						'Monster Hunt Event',
+						'Monster Start', /*1*/
+						'Basic Hunt Event',
+						'Overwhelming Darkness',
+						'Monster Hunt Event',
+						'Basic Hunt Event', /*2*/
+						'Monster Hunt Event',
+						'Basic Hunt Event', /*3*/
+						'Basic Hunt Event',
+						'Basic Hunt Event'
 					],
 					attributes: {
 						accuracy: 0,
@@ -484,19 +484,19 @@
 				},
 				'Level 2': {
 					huntSetup: [
-						'P',
-						'S',
-						'B',
-						'S',
-						'B', /*1*/
-						'B',
-						'O',
-						'S',
-						'M', /*2*/
-						'S',
-						'B', /*3*/
-						'B',
-						'B'
+						'Player Start',
+						'Monster Hunt Event',
+						'Basic Hunt Event',
+						'Monster Hunt Event',
+						'Basic Hunt Event', /*1*/
+						'Basic Hunt Event',
+						'Overwhelming Darkness',
+						'Monster Hunt Event',
+						'Monster Start', /*2*/
+						'Monster Hunt Event',
+						'Basic Hunt Event', /*3*/
+						'Basic Hunt Event',
+						'Basic Hunt Event'
 					],
 					attributes: {
 						accuracy: 0,
@@ -549,19 +549,19 @@
 				},
 				'Level 3': {
 					huntSetup: [
-						'P',
-						'S',
-						'B',
-						'S',
-						'B', /*1*/
-						'B',
-						'O',
-						'S',
-						'B', /*2*/
-						'S',
-						'M', /*3*/
-						'B',
-						'B'
+						'Player Start',
+						'Monster Hunt Event',
+						'Basic Hunt Event',
+						'Monster Hunt Event',
+						'Basic Hunt Event', /*1*/
+						'Basic Hunt Event',
+						'Overwhelming Darkness',
+						'Monster Hunt Event',
+						'Basic Hunt Event', /*2*/
+						'Monster Hunt Event',
+						'Monster Start', /*3*/
+						'Basic Hunt Event',
+						'Basic Hunt Event'
 					],
 					attributes: {
 						accuracy: 0,
@@ -615,21 +615,21 @@
 				},
 				'Mad Steed': {
 					huntSetup: [
-						'P',
-						'S',
-						'B',
-						'S',
-						'B', /*1*/
-						'B',
-						'O',
-						'S',
-						'B', /*2*/
-						'S',
-						'M', /*3*/
-						'B',
-						'B'
+						'Player Start',
+						'Monster Hunt Event',
+						'Basic Hunt Event',
+						'Monster Hunt Event',
+						'Basic Hunt Event', /*1*/
+						'Basic Hunt Event',
+						'Overwhelming Darkness',
+						'Monster Hunt Event',
+						'Basic Hunt Event', /*2*/
+						'Monster Hunt Event',
+						'Monster Start', /*3*/
+						'Basic Hunt Event',
+						'Basic Hunt Event'
 					],
-					life:20,
+					life: 20,
 					attributes: {
 						accuracy: 1,
 						damage: 0,
@@ -694,19 +694,19 @@
 			'Phoenix': {
 				'Level 1': {
 					huntSetup: [
-						'P',
-						'B',
-						'S',
-						'B',
-						'S',
-						'M', /*1*/
-						'O',
-						'S',
-						'B', /*2*/
-						'S',
-						'B',
-						'B', /*3*/
-						'B'
+						'Player Start',
+						'Basic Hunt Event',
+						'Monster Hunt Event',
+						'Basic Hunt Event',
+						'Monster Hunt Event',
+						'Monster Start', /*1*/
+						'Overwhelming Darkness',
+						'Monster Hunt Event',
+						'Basic Hunt Event', /*2*/
+						'Monster Hunt Event',
+						'Basic Hunt Event',
+						'Basic Hunt Event', /*3*/
+						'Basic Hunt Event'
 					],
 					attributes: {
 						accuracy: 0,
@@ -761,19 +761,19 @@
 				},
 				'Level 2': {
 					huntSetup: [
-						'P',
-						'B',
-						'S',
-						'B',
-						'S',
-						'B', /*1*/
-						'O',
-						'S',
-						'M', /*2*/
-						'S',
-						'B',
-						'B', /*3*/
-						'B'
+						'Player Start',
+						'Basic Hunt Event',
+						'Monster Hunt Event',
+						'Basic Hunt Event',
+						'Monster Hunt Event',
+						'Basic Hunt Event', /*1*/
+						'Overwhelming Darkness',
+						'Monster Hunt Event',
+						'Monster Start', /*2*/
+						'Monster Hunt Event',
+						'Basic Hunt Event',
+						'Basic Hunt Event', /*3*/
+						'Basic Hunt Event'
 					],
 					attributes: {
 						accuracy: 0,
@@ -828,19 +828,19 @@
 				},
 				'Level 3': {
 					huntSetup: [
-						'P',
-						'B',
-						'S',
-						'B',
-						'S',
-						'B', /*1*/
-						'O',
-						'S',
-						'B', /*2*/
-						'S',
-						'B',
-						'M', /*3*/
-						'B'
+						'Player Start',
+						'Basic Hunt Event',
+						'Monster Hunt Event',
+						'Basic Hunt Event',
+						'Monster Hunt Event',
+						'Basic Hunt Event', /*1*/
+						'Overwhelming Darkness',
+						'Monster Hunt Event',
+						'Basic Hunt Event', /*2*/
+						'Monster Hunt Event',
+						'Basic Hunt Event',
+						'Monster Start', /*3*/
+						'Basic Hunt Event'
 					],
 					attributes: {
 						accuracy: 0,
@@ -895,21 +895,21 @@
 				},
 				'Golden Eyed King': {
 					huntSetup: [
-						'P',
-						'B',
-						'S',
-						'B',
-						'S',
-						'B', /*1*/
-						'O',
-						'S',
-						'B', /*2*/
-						'S',
-						'B',
-						'M', /*3*/
-						'B'
+						'Player Start',
+						'Basic Hunt Event',
+						'Monster Hunt Event',
+						'Basic Hunt Event',
+						'Monster Hunt Event',
+						'Basic Hunt Event', /*1*/
+						'Overwhelming Darkness',
+						'Monster Hunt Event',
+						'Basic Hunt Event', /*2*/
+						'Monster Hunt Event',
+						'Basic Hunt Event',
+						'Monster Start', /*3*/
+						'Basic Hunt Event'
 					],
-					life:25,
+					life: 25,
 					attributes: {
 						accuracy: 0,
 						damage: 0,
@@ -1547,6 +1547,8 @@
 		factory.getMonsterResourceDeckDefinition = getMonsterResourceDeckDefinition;
 		factory.getMonsterAttributeDefinition = getMonsterAttributeDefinition;
 		factory.getMonsterLife = getMonsterLife;
+		factory.getHuntDeck = getHuntDeck;
+		factory.getHuntSetup = getHuntSetup;
 		function getDefinition(monsterName, level) {
 			return this.definitions[monsterName][level];
 		}
@@ -1585,6 +1587,15 @@
 
 		function getMonsterResourceDeckDefinition(monsterName) {
 			return angular.copy(this.monsterCardLibrary.library[monsterName].Resource);
+		}
+
+		function getHuntDeck(monsterName) {
+			return angular.copy(this.monsterCardLibrary.library[monsterName].Hunt);
+		}
+
+		function getHuntSetup(monsterName, aiLevel) {
+			debugger;
+			return this.definitions[monsterName][aiLevel].huntSetup;
 		}
 
 		return factory;
