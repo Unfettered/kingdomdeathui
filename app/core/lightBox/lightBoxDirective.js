@@ -19,16 +19,16 @@
 					}
 					var modalHtml =
 						'<div class="modal fade" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">' +
-						'<div '+width+' class="modal-dialog" role="document">' +
-						'<div class="modal-content">' +
-						'<div class="modal-header">' +
-						'<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
-						'</div>' +
-						'<div style="text-align:center" class="modal-body">' +
-						'<img style="width:95%" src="' + $(this).attr('src') + '">' +
-						'</div>' +
-						'</div>' +
-						'</div>' +
+							'<div '+width+' class="modal-dialog" role="document">' +
+								'<div class="modal-content">' +
+									'<div class="modal-header">' +
+										'<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
+									'</div>' +
+									'<div style="text-align:center" class="modal-body">' +
+										'<img style="width:95%" src="' + $(this).attr('src') + '">' +
+									'</div>' +
+								'</div>' +
+							'</div>' +
 						'</div>'
 
 

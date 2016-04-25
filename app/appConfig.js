@@ -31,6 +31,15 @@
 						},
 					}
 				})
+				.state('kingdom-death-ui.reset', {
+					url: "/reset",
+					views: {
+						"main": {
+							controller: 'resetController as view',
+							templateUrl: "reset/reset.html"
+						},
+					}
+				})
 				.state('kingdom-death-ui.tokenTracker', {
 					url: "/token-tracker",
 					views: {

@@ -12,6 +12,7 @@
 		'kingdom-death-ui.showdown',
 		'kingdom-death-ui.hunt',
 		'kingdom-death-ui.tokenTracker',
+		'kingdom-death-ui.reset',
 		'core.monster',
 		'core.card',
 		'core.deck',
