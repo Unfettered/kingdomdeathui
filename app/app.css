@@ -514,6 +514,7 @@ div[name=main] {
 	opacity: 1;
 }
 
-.hunt-region {
+.hunt-region,.play-region {
+	clear:both;
 	display: block;
 }

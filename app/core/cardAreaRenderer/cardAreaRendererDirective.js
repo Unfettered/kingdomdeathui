@@ -14,7 +14,7 @@
 				var cardFacing = attrs.cardFacing;
 				var defaultValue = attrs.defaultValue;
 				scope.$watchGroup(
-					['view.monster.' + deckName + '.length()', 'view.monster.' + deckName + '.cards[0].name' ],
+					['view.monster.' + deckName + '.length()', 'view.monster.' + deckName + '.cards[0].uuid' ],
 					renderCardArea
 				);
 

@@ -17,11 +17,11 @@
 
 
 				$scope.$watchGroup(
-					['view.monster.' + deckName + '.length()', 'view.monster.' + deckName + '.cards[0].name' ],
-					x
+					['view.monster.' + deckName + '.length()', 'view.monster.' + deckName + '.cards[0].uuid' ],
+					renderDeck
 				);
 
-				function x() {
+				function renderDeck() {
 					var deck  = $scope.view.monster[deckName];
 					if(deck.length()<1){
 						angular.element($element.find('div')[1]).html(defaultValue);

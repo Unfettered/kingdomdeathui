@@ -17,7 +17,7 @@
 				scope.$watchGroup(
 					[
 						'view.monster.' + deckName + '.length()',
-						'view.monster.' + deckName + '.cards[0].name'
+						'view.monster.' + deckName + '.cards[0].uuid'
 					], function () {
 					$('#' + deckName + 'Modal').remove();
 
