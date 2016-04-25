@@ -514,7 +514,32 @@ div[name=main] {
 	opacity: 1;
 }
 
-.hunt-region,.play-region {
-	clear:both;
+.hunt-region, .play-region {
+	clear: both;
 	display: block;
+}
+
+.roll-hunt-event {
+	cursor: pointer;
+	float: left;
+	text-align: center;
+	z-index: 5;
+	position: fixed;
+	opacity: 0.3;
+	border: lightgrey 1px solid;
+	display: block;
+	-moz-border-radius: 2%;
+	-webkit-border-radius: 2%;
+	border-radius: 2%;
+	top: 75mm;
+	left:-1px;
+	background-color:#272b30;
+	padding:2mm;
+}
+.roll-hunt-event:hover {
+	opacity: 1;
+}
+.roll-hunt-event img {
+	width: 10mm;
+	padding: 1mm;
 }
